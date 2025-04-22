@@ -1,0 +1,12 @@
+body {
+    background-color: #c5d7d7;
+    font-family: verdana;
+}
+
+.switch-one {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    box-shadow: 10px 10px black;
+    border-radius: 50px;
+}
