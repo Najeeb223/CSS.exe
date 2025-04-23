@@ -41,6 +41,7 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+    margin-bottom: 100px;
 }
 
 .switch-card {
@@ -54,4 +55,24 @@ body {
 
 .switch-card h1, p {
     padding-left: 20px;
+}
+
+.grid-two {
+    display: grid;
+    grid-template-columns: repeat(1, 4fr);
+    gap: 20px;
+    justify-items: start;
+    text-align: left;
+    
+    
+}
+
+.switch-block {
+    border: solid 5px black;
+    border-radius: 10px;
+    gap: 20px;
+    box-shadow: 5px 5px black;
+    max-width: 300px;
+    padding: 20px;
+    height: auto;
 }
