@@ -7,15 +7,42 @@ body {
     - Second 'auto' does the same for <p>
     - You could also use '1fr 1fr' to force equal height for both rows */
 
+/* .heading as a flex container */
+.heading {
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;  /* Center the text in the heading */
+    margin: 0 auto;  /* Center the heading container horizontally */
+    padding: 20px;  /* Space around the heading */
+}
+
+.heading h1 {
+    margin: 0;  /* Remove default margin */
+    font-size: 2.5rem;  /* Adjust the size of the heading */
+}
+
+.jc-logo {
+    display: block;  /* Change logo to block for proper flow */
+    margin: 0 auto;  /* Center the logo horizontally */
+    padding: 10px 0;  /* Space around the logo */
+    max-height: 50px;
+    max-width: 70px;
+}
+
+.heading p {
+    font-family: 'IBM Plex Mono', cursive;
+    margin-top: 10px;  /* Space between heading and paragraph */
+    margin-bottom: 20px;  /* Space between paragraph and other content */
+    border-bottom: 10px solid black;  /* Border beneath the paragraph */
+    text-align: center;  /* Ensure the text is centered */
+}
+
 .switch {
-    /* minus pushes the margin up and positive pushes the margin down */
     margin-top: 200px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    
-
 }
+
 .switch-card {
     border: solid 10px black;
     border-radius: 20px;
