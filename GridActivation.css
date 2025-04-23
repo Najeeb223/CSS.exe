@@ -36,7 +36,7 @@ body {
     text-align: center;  /* Ensure the text is centered */
 }
 
-.switch {
+.grid-one {
     margin-top: 200px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
