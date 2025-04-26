@@ -82,6 +82,8 @@ body {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: 100px 100px;
+    grid-template-areas: "label", "mon", "tue", "wed", "thu", "fri", "sat", "sun";
+    grid-template-areas: "label", "mon", "tue", "wed", "thu", "fri", "sat", "sun";
     column-gap: 5px;
     row-gap: 5px;
     margin: 0 auto;
@@ -97,4 +99,44 @@ body {
     box-shadow: 2px 2px black;
     padding: 10px;
     height: 50px;
+}
+
+.day-block:nth-child(1) {
+    grid-area: label;
+}
+
+.day-block:nth-child(2) {
+    grid-area: mon;
+}
+
+.day-block:nth-child(3) {
+    grid-area: tue;
+}
+
+.day-block:nth-child(4) {
+    grid-area: wed;
+}
+
+.day-block:nth-child(5) {
+    grid-area: thu;
+}
+
+.day-block:nth-child(6) {
+    grid-area: fri;
+}
+
+.day-block:nth-child(7) {
+    grid-area: sat;
+}
+
+.day-block:nth-child(8) {
+    grid-area: sun;
+}
+
+.task-block {
+    grid-area: label;
+}
+
+.outcome-block {
+    grid-area: label;
 }
