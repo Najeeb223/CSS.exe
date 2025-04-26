@@ -133,10 +133,3 @@ body {
     grid-area: sun;
 }
 
-.task-block {
-    grid-area: label;
-}
-
-.outcome-block {
-    grid-area: label;
-}
