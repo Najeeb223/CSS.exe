@@ -161,3 +161,19 @@ body {
     display: block;
     width: 100%;
 }
+
+.p1-containter, 
+.p2-container  {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.player-logo {
+    height: 55px;
+    width: auto;
+}
+
+.bold {
+    font-weight: bolder;
+}
