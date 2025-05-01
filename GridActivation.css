@@ -150,3 +150,9 @@ body {
 .day-block.sunday    { 
     grid-area: sun; 
 }
+
+.flex-one {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
