@@ -177,3 +177,38 @@ body {
 .bold {
     font-weight: bolder;
 }
+
+.icon-one {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.icon-two {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.icon-three{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.icon-four {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.icon-five {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.icons {
+    height: 20px;
+    width: auto
+}
