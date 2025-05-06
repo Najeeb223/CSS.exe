@@ -154,6 +154,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-bottom: 100px;
 
 }
 
@@ -211,4 +212,14 @@ body {
 .icons {
     height: 20px;
     width: auto
+}
+
+.flex-two {
+    display: flex;
+    flex-direction: row;
+    border: 5px solid black;
+}
+
+.flex2-heading {
+    padding-left: 30px;
 }
