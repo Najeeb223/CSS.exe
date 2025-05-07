@@ -221,16 +221,16 @@ body {
 }
 
 .flex2-heading {
-    padding-left: 30px;
+    display: block;
+    padding-left: 80px;
 }
 
 .stat-row {
     display: flex;
+    justify-content: space-around;
 }
 
 .hp-metric {
-    display: flex;
-    justify-content: space-around;
     border: 3px solid black;
     width: 100%;
 
