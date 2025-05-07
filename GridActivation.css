@@ -224,9 +224,14 @@ body {
     padding-left: 30px;
 }
 
+.stat-row {
+    display: flex;
+}
+
 .hp-metric {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     border: 3px solid black;
-    width: 150%;
+    width: 100%;
+
 }
