@@ -213,25 +213,3 @@ body {
     height: 20px;
     width: auto
 }
-
-.flex-two {
-    display: flex;
-    flex-direction: row;
-    border: 5px solid black;
-}
-
-.flex2-heading {
-    display: block;
-    padding-left: 80px;
-}
-
-.stat-row {
-    display: flex;
-    justify-content: space-around;
-}
-
-.hp-metric {
-    border: 3px solid black;
-    width: 100%;
-
-}
