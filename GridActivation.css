@@ -213,3 +213,11 @@ body {
     height: 20px;
     width: auto
 }
+
+.flex-two {
+    border: solid 3px black;
+}
+
+.flex2-heading {
+    padding-left: 80px;
+}
