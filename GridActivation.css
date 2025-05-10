@@ -236,7 +236,7 @@ body {
     padding-top: 10px;
 }
 
-.metric1-stats {
+.p1-hp {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -248,4 +248,46 @@ body {
     width: auto;
     padding-left: 80px;
 }
+
+.p1-hp-metric {
+    border: solid 3px black;
+    width: 45%;
+}
+
+.p1-dps {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.flame-icon {
+    height: 20px;
+    width: auto;
+    padding-left: 80px;
+}
+
+.p1-dps-metric {
+    border: solid 3px black;
+    width: 25%;
+}
+
+.p1-speed {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.speed-icon {
+    height: 20px;
+    width: auto;
+    padding-left: 80px;
+}
+
+.p1-speed-metric {
+    border: solid 3px black;
+    width: 30%;
+}
+
 
