@@ -290,4 +290,77 @@ body {
     width: 30%;
 }
 
+.p1-energy {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.energy-icon {
+    height: 20px;
+    width: auto;
+    padding-left: 80px;
+}
+
+.p1-energy-metric {
+    border: solid 3px black;
+    width: 37%;
+}
+
+.metric2-container {
+    display: flex;
+    gap: 20px;
+}
+
+.p2-hp {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.p2-hp-metric {
+    border: solid 3px black;
+    width: 37%;
+}
+
+.p2-dps {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.p2-dps-metric {
+    border: solid 3px black;
+    width: 30%;
+}
+
+.p2-speed {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.p2-speed-metric {
+    border: solid 3px black;
+    width: 32.5%;
+}
+
+.p2-energy {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.p2-energy-metric {
+    border: solid 3px black;
+    width: 33%;
+}
+
+
+
 
