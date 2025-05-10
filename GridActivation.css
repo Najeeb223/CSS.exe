@@ -215,9 +215,20 @@ body {
 }
 
 .flex-two {
+    display: flex;
+    justify-content: space-around;
     border: solid 3px black;
 }
 
 .flex2-heading {
-    padding-left: 80px;
+}
+
+.metric1-container {
+    display: flex;
+    gap: 20px;
+}
+
+.player-logo-metric {
+    height: 40px;
+    width: auto;
 }
