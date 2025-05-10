@@ -217,10 +217,12 @@ body {
 .flex-two {
     display: flex;
     justify-content: space-around;
+    flex-direction: column;
     border: solid 3px black;
 }
 
 .flex2-heading {
+    padding-left: 80px;
 }
 
 .metric1-container {
@@ -231,4 +233,19 @@ body {
 .player-logo-metric {
     height: 40px;
     width: auto;
+    padding-top: 10px;
 }
+
+.metric1-stats {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.heart-icon {
+    height: 20px;
+    width: auto;
+    padding-left: 80px;
+}
+
