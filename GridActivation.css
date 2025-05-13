@@ -13,6 +13,7 @@ body {
     text-align: center;  /* Center the text in the heading */
     margin: 0 auto;  /* Center the heading container horizontally */
     padding: 20px;  /* Space around the heading */
+    margin-bottom: 50px;
 }
 
 .heading h1 {
@@ -34,6 +35,10 @@ body {
     margin-bottom: 20px;  /* Space between paragraph and other content */
     border-bottom: 10px solid black;  /* Border beneath the paragraph */
     text-align: center;  /* Ensure the text is centered */
+}
+
+.hero {
+    font-size: 70px;
 }
 
 .grid-one {
