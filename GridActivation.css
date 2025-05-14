@@ -37,8 +37,32 @@ body {
     text-align: center;  /* Ensure the text is centered */
 }
 
-.hero {
-    font-size: 70px;
+.start-heading {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.start-game {
+    animation-name: fadeInStartGame;
+    animation-timing-function: ease-in;
+    animation-duration: 5s;
+}
+@keyframes fadeInStartGame {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.start-btn {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #c5d7d7;
+    padding: 0 20px;
+    font-size: 15px; 
+    border-radius: 20px;
+    cursor: pointer;
 }
 
 .grid-one {
