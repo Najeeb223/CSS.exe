@@ -69,7 +69,7 @@ body {
     font-family: 'Press Start 2P', cursive;
     background-color: #c5d7d7;
     animation: 3s pulse-animation infinite;
-    padding: 0 20px;
+    padding: 20 20px;
     font-size: 15px; 
     border-radius: 10px;
     cursor: pointer;
