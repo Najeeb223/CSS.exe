@@ -1,8 +1,13 @@
-document.addEventListener("DOMContentLoaded", () => {
+
+function scrollToLegendSection() {
+
     const scrollBtn = document.getElementById("start-btn");
     const legendSection = document.querySelector(".legend");
-  
-    scrollBtn.addEventListener("click", () => {
-      legendSection.scrollIntoView({ behavior: "smooth" });
+
+    scrollBtn.addEventListener("click", function () {
+        legendSection.scrollIntoView({ behavior: "smooth"});
     });
-  });
+}
+
+scrollToLegendSection();
+
