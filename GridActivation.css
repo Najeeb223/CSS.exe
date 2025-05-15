@@ -52,6 +52,7 @@ body {
     animation-timing-function: ease-in;
     animation-duration: 5s;
     gap: 50px;
+    margin-bottom: 100px;
 }
 @keyframes fadeInStartGame {
     0% {
@@ -86,6 +87,13 @@ body {
       100% {
         transform: scale(1);
       }
+}
+
+.legend {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: solid 5px black;
 }
 .grid-one {
     margin-top: 200px;
