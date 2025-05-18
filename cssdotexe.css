@@ -309,6 +309,9 @@ body {
 }
 
 .p1-hp-metric {
+    animation-name: fadeInPlayer1Hp;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
     border: solid 3px black;
     width: 45%;
 }
