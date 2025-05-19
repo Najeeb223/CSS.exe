@@ -295,6 +295,12 @@ body {
     padding-top: 10px;
 }
 
+.metric-bar {
+
+    width: 50%;
+    border: 1px solid black;
+}
+
 .p1-hp {
     display: flex;
     flex-direction: row;
@@ -309,11 +315,21 @@ body {
 }
 
 .p1-hp-metric {
-    animation-name: fadeInPlayer1Hp;
+    animation-name: fadeInP1Hp;
     animation-timing-function: ease-in;
-    animation-duration: 2s;
+    animation-duration: 5s;
     border: solid 3px black;
     width: 45%;
+}
+
+@keyframes fadeInP1Hp {
+
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .p1-dps {
