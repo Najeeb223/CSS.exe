@@ -100,15 +100,29 @@ body {
 .grid-one-heading {
     display: flex;
     justify-content: center;
+    margin-bottom: 100px;
 }
 .grid-one {
-    margin-top: 100px;
     display: grid;
     align-items: center;
-    grid-template-columns: repeat(2, 1fr);
-    padding-left: 200px;
+    grid-template-columns: 1fr auto;
+    max-width: 1000px;
+    margin: 0 auto;
     gap: 5px;
+    margin-bottom: 100px;
    
+}
+
+.card-heading {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.groundbot-icon {
+    height: 60px;
+    width: auto;
+    margin-bottom: 30px;
+
 }
 
 .switch-card {
@@ -117,7 +131,7 @@ body {
     gap: 20px;
     box-shadow: 10px 10px black;
     width: 400px;
-    height: 450px;
+    height: 300px;
     margin-bottom: 100px;
 }
 
