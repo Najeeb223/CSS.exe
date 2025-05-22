@@ -97,10 +97,17 @@ body {
     margin-bottom: 600px;
 }
 
-.grid-one-heading {
+#grid-one-btn {
     display: flex;
     justify-content: center;
+    margin: 0 auto;
     margin-bottom: 100px;
+    font-family: 'Press Start 2P', cursive;
+    background-color: #c5d7d7;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 5px 5px black;
 }
 .grid-one {
     display: grid;
