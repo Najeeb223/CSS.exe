@@ -12,3 +12,8 @@ function scrollToLegendSection() {
 
 scrollToLegendSection();
 
+function selectPlayers(){
+
+    const choosePlayersBtn = document.getElementById("grid-one-btn");
+    
+}

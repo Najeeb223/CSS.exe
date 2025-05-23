@@ -139,11 +139,22 @@ body {
     box-shadow: 10px 10px black;
     width: 400px;
     height: 300px;
+    position: relative;
+    z-index: 1;
     margin-bottom: 100px;
 }
 
 .switch-card h2, p {
     padding-left: 80px;
+}
+
+#player-selector {
+    background-color: #c5d7d7;
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    z-index: 10;
+
 }
 
 .grid-two {
