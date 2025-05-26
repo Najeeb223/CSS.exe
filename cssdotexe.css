@@ -170,12 +170,15 @@ body {
 }
 
 #player-selector-two {
+    border: none;
+    box-shadow: 0 0 0 10px black;
     background-color: black;
+    box-sizing: border-box;
     width: 400px;
     height: 300px;
     position: absolute;
     pointer-events: none;
-    transition: top 0.3s, left 0.3s;
+    transition: none;
     top: 0px;     
     left: 0px; 
     z-index: 10;
