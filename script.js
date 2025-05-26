@@ -59,5 +59,5 @@ function selectPlayers() {
         }, cycleSpeed);
     });
 }
-
+//
 selectPlayers();
