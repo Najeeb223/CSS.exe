@@ -70,7 +70,7 @@ body {
     font-family: 'Press Start 2P', cursive;
     background-color: #c5d7d7;
     animation: 3s pulse-animation infinite;
-    padding: 20 20px;
+    padding: 20px 20px;
     font-size: 15px; 
     border-radius: 10px;
     cursor: pointer;
@@ -133,10 +133,11 @@ body {
 }
 
 .switch-card {
-    border: solid 10px black;
+    border: none;
+    box-shadow: 0 0 0 10px black;
+    box-sizing: border-box;
     border-radius: 20px;
     gap: 20px;
-    box-shadow: 10px 10px black;
     width: 400px;
     height: 300px;
     position: relative;
@@ -153,12 +154,15 @@ body {
   }
 
 #player-selector-one {
+    border: none;
+    box-shadow: 0 0 0 10px black;
     background-color: black;
+    box-sizing: border-box;
     width: 400px;
     height: 300px;
     position: absolute;
     pointer-events: none;
-    transition: top 0.3s, left 0.3s;
+    transition: none;
     top: 0px;     
     left: 0px; 
     z-index: 10;
