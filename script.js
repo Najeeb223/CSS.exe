@@ -8,6 +8,10 @@ function scrollToLegendSection() {
         legendSection.scrollIntoView({ behavior: "smooth"});
     });
 }
+
+scrollToLegendSection();
+
+
 function selectPlayers() {
     const choosePlayersBtn = document.getElementById("grid-one-btn");
     const selectorOne = document.getElementById("player-selector-one");
@@ -15,24 +19,16 @@ function selectPlayers() {
 
     const playerOne = document.getElementById("player-one");
     const playerTwo = document.getElementById("player-two");
-    const playerThree = document.getElementById("player-three");
-    const playerFour = document.getElementById("player-four");
-
     const chamberGrid = document.getElementById("chamber-grid");
 
     choosePlayersBtn.addEventListener("click", function () {
-        // Reveal the chamber grid and players
+        // Show chamber and selectors instantly (no cycling)
         chamberGrid.style.display = "grid";
-        playerOne.style.opacity = "1";
-        playerTwo.style.opacity = "1";
-        playerThree.style.opacity = "1";
-        playerFour.style.opacity = "1";
+        selectorOne.style.display = "block";
+        selectorTwo.style.display = "block";
 
-        // Delay before showing and positioning selectors
-        setTimeout(() => {
-            selectorOne.style.display = "block";
-            selectorTwo.style.display = "block";
-
+        // Wait for the layout to be painted before calculating positions
+        requestAnimationFrame(() => {
             const gridRect = chamberGrid.getBoundingClientRect();
             const rectOne = playerOne.getBoundingClientRect();
             const rectTwo = playerTwo.getBoundingClientRect();
@@ -42,7 +38,7 @@ function selectPlayers() {
 
             selectorTwo.style.left = `${Math.round(rectTwo.left - gridRect.left)}px`;
             selectorTwo.style.top = `${Math.round(rectTwo.top - gridRect.top)}px`;
-        }, 500); // Small delay for natural feel
+        });
     });
 }
 
