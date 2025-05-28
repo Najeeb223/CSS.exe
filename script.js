@@ -40,7 +40,6 @@ function selectPlayers() {
 
             gridExplanation.style.display = "block";
 
-            // ✅ Scroll to the explanation smoothly
             gridExplanation.scrollIntoView({ behavior: "smooth" });
         });
     });

@@ -111,7 +111,6 @@ body {
 }
 .grid-one {
     display: grid;
-    align-items: center;
     grid-template-columns: 1fr auto;
     max-width: 1000px;
     margin: 0 auto;
@@ -234,11 +233,12 @@ body {
 
 .grid-two {
     display: grid;
+    margin: 0 auto;
+    max-width: 400px;
     grid-template-columns: repeat(1, 4fr);
     gap: 20px;
-    justify-items: start;
     text-align: left;
-    margin-bottom: 100px;
+    margin-bottom: 400px;
     
 }
 
