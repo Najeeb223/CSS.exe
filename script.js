@@ -11,7 +11,6 @@ function scrollToLegendSection() {
 
 scrollToLegendSection();
 
-
 function selectPlayers() {
     const choosePlayersBtn = document.getElementById("grid-one-btn");
     const selectorOne = document.getElementById("player-selector-one");
@@ -22,12 +21,11 @@ function selectPlayers() {
     const chamberGrid = document.getElementById("chamber-grid");
 
     choosePlayersBtn.addEventListener("click", function () {
-        // Show chamber and selectors instantly (no cycling)
+
         chamberGrid.style.display = "grid";
         selectorOne.style.display = "block";
         selectorTwo.style.display = "block";
 
-        // Wait for the layout to be painted before calculating positions
         requestAnimationFrame(() => {
             const gridRect = chamberGrid.getBoundingClientRect();
             const rectOne = playerOne.getBoundingClientRect();
@@ -38,6 +36,8 @@ function selectPlayers() {
 
             selectorTwo.style.left = `${Math.round(rectTwo.left - gridRect.left)}px`;
             selectorTwo.style.top = `${Math.round(rectTwo.top - gridRect.top)}px`;
+
+            document.getElementById("grid-explanation").style.display = "block";
         });
     });
 }

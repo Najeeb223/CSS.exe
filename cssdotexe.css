@@ -197,6 +197,40 @@ body {
 
 }
 
+.mystic-text {
+    display: none; 
+    font-family: 'Georgia', serif;
+    color: #fdf6e3;
+    padding: 1rem;
+    background-color: #111;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 2rem auto;
+  }
+  
+  .mystic-text p {
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeInLine 0.8s ease-out forwards;
+  }
+  
+  .mystic-text p:nth-child(1) { animation-delay: 0.2s; }
+  .mystic-text p:nth-child(2) { animation-delay: 0.8s; }
+  .mystic-text p:nth-child(3) { animation-delay: 1.4s; }
+  .mystic-text p:nth-child(4) { animation-delay: 2.0s; }
+  .mystic-text p:nth-child(5) { animation-delay: 2.6s; }
+  .mystic-text p:nth-child(6) { animation-delay: 3.2s; }
+  .mystic-text p:nth-child(7) { animation-delay: 3.8s; }
+  .mystic-text p:nth-child(8) { animation-delay: 4.4s; }
+  
+  @keyframes fadeInLine {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+
 .grid-two {
     display: grid;
     grid-template-columns: repeat(1, 4fr);
