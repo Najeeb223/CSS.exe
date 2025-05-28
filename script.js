@@ -19,6 +19,7 @@ function selectPlayers() {
     const playerOne = document.getElementById("player-one");
     const playerTwo = document.getElementById("player-two");
     const chamberGrid = document.getElementById("chamber-grid");
+    const gridExplanation = document.getElementById("grid-explanation");
 
     choosePlayersBtn.addEventListener("click", function () {
 
@@ -37,7 +38,10 @@ function selectPlayers() {
             selectorTwo.style.left = `${Math.round(rectTwo.left - gridRect.left)}px`;
             selectorTwo.style.top = `${Math.round(rectTwo.top - gridRect.top)}px`;
 
-            document.getElementById("grid-explanation").style.display = "block";
+            gridExplanation.style.display = "block";
+
+            // ✅ Scroll to the explanation smoothly
+            gridExplanation.scrollIntoView({ behavior: "smooth" });
         });
     });
 }

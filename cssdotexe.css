@@ -198,11 +198,12 @@ body {
 }
 
 .mystic-text {
-    display: none; 
-    font-family: 'Georgia', serif;
-    color: #fdf6e3;
+    display: grid;
+    align-items: center; 
+    font-family: 'IBM Plex Mono', serif;
+    color: black;
     padding: 1rem;
-    background-color: #111;
+    background-color: #c5d7d7;
     border-radius: 8px;
     max-width: 600px;
     margin: 2rem auto;
