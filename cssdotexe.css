@@ -242,6 +242,12 @@ body {
     
 }
 
+.animation-icons {
+    height: 40px;
+    width: auto;
+    padding-top: 10px;
+}
+
 .switch-block {
     border: solid 5px black;
     border-radius: 10px;
