@@ -46,3 +46,56 @@ function selectPlayers() {
 }
 
 selectPlayers();
+function specialMoves() {
+    const buttons = document.querySelectorAll('.animate-btn');
+  
+    buttons.forEach(button => {
+      button.addEventListener('click', () => {
+        const switchBlock = button.nextElementSibling;
+        if (!switchBlock) return;
+  
+        const icon = switchBlock.querySelector('.animation-icons');
+        if (!icon) return;
+  
+        const animId = icon.dataset.animId;
+        if (!animId) return;
+  
+        const infoBlock = switchBlock.querySelector('.grid-info');
+        if (!infoBlock) return;
+  
+        // Prevent multiple clicks while animation/info is showing
+        if (icon.classList.contains('animating')) return;
+  
+        // Start animation
+        icon.id = animId;
+        icon.classList.add('animating');
+        icon.style.opacity = '1';       // Make sure icon is visible
+        infoBlock.style.opacity = '0';  // Hide info text initially
+        infoBlock.style.display = 'none';
+  
+        // After 3.5 seconds, stop animation and show info
+        setTimeout(() => {
+          // Fade out icon
+          icon.style.transition = 'opacity 0.5s ease';
+          icon.style.opacity = '0';
+  
+          // After fade out completes
+          setTimeout(() => {
+            icon.id = ''; // stop animation
+            icon.classList.remove('animating');
+  
+            // Hide icon completely
+            icon.style.display = 'none';
+  
+            // Show and fade in infoBlock
+            infoBlock.style.display = 'block';
+            infoBlock.style.transition = 'opacity 0.7s ease';
+            infoBlock.style.opacity = '1';
+          }, 500); // wait for fade out duration
+        }, 3500); // animation duration
+      });
+    });
+  }
+  
+  specialMoves();
+  
