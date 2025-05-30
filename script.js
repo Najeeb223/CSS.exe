@@ -46,6 +46,8 @@ function selectPlayers() {
 }
 
 selectPlayers();
+
+
 function specialMoves() {
     const buttons = document.querySelectorAll('.animate-btn');
   
