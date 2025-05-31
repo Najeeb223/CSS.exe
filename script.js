@@ -101,7 +101,7 @@ specialMoves();
 
 function playReadyButton() {
 
-  document.querySelector('#readyButton').addEventListener('click', () => {
+  document.querySelector('#ready-btn').addEventListener('click', () => {
     const audio = document.getElementById('roundAudio');
     if (audio) {
       audio.currentTime = 0; // rewind to start
