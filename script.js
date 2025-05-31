@@ -98,3 +98,17 @@ function specialMoves() {
 }
 
 specialMoves();
+
+function playReadyButton() {
+
+  document.querySelector('#readyButton').addEventListener('click', () => {
+    const audio = document.getElementById('roundAudio');
+    if (audio) {
+      audio.currentTime = 0; // rewind to start
+      audio.play();
+    }
+  });
+  
+}
+
+playReadyButton();
