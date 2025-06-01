@@ -444,6 +444,30 @@ body {
       }
 }
 
+#round-popup {
+    font-family: 'Press Start 2P', cursive;
+    color: black;
+    font-size: 40px;
+    text-align: center;
+    animation: 2s round-one-popup ease-in-out forwards;
+}
+
+@keyframes round-one-popup {
+
+    0% {
+        opacity: 0;
+      }
+      20% {
+        opacity: 1;
+      }
+      80% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+}
+
 .flex-two {
     display: flex;
     justify-content: space-around;

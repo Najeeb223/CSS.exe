@@ -103,6 +103,7 @@ specialMoves();
 function playReadyButton() {
 
   const flexTwo = document.querySelector('.flex-two');
+  const roundOnePopup = document.getElementById("round-popup");
   document.querySelector('#ready-btn').addEventListener('click', () => {
     const audio = document.getElementById('roundAudio');
     if (audio) {
@@ -111,6 +112,7 @@ function playReadyButton() {
       
     }
     flexTwo.scrollIntoView({ behavior: "smooth"});
+    roundOnePopup.style.display = "block";
   });
   
 }
