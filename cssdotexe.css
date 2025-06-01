@@ -418,7 +418,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
 }
 
 #ready-btn {

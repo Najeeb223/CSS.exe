@@ -50,6 +50,7 @@ selectPlayers();
 function specialMoves() {
   const buttons = document.querySelectorAll('.animate-btn');
 
+
   buttons.forEach(button => {
     button.addEventListener('click', () => {
       const switchBlock = button.nextElementSibling;
@@ -101,12 +102,15 @@ specialMoves();
 
 function playReadyButton() {
 
+  const flexTwo = document.querySelector('.flex-two');
   document.querySelector('#ready-btn').addEventListener('click', () => {
     const audio = document.getElementById('roundAudio');
     if (audio) {
       audio.currentTime = 0; // rewind to start
       audio.play();
+      
     }
+    flexTwo.scrollIntoView({ behavior: "smooth"});
   });
   
 }
