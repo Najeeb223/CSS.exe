@@ -128,6 +128,7 @@ function playFightButton() {
 
     const fightBtn = document.getElementById("fight-btn");
     const fightPopup = document.getElementById("fight-popup");
+    const flexTwoInfo = document.getElementById("flex2-info");
 
     fightBtn.addEventListener("click", () => {
       const fightAudio = document.getElementById("fightAudio");
@@ -137,6 +138,8 @@ function playFightButton() {
       }
 
       fightPopup.style.display = "block";
+      flexTwoInfo.style.display = "block";
+
     });
 
 }
