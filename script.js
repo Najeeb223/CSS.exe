@@ -118,9 +118,27 @@ function playReadyButton() {
     flexTwo.scrollIntoView({ behavior: "smooth"});
     roundOnePopup.style.display = "block";
     flexOneInfo.style.display = "block";
-    console.log(flexOneInfo);
   });
   
 }
 
 playReadyButton();
+
+function playFightButton() {
+
+    const fightBtn = document.getElementById("fight-btn");
+    const fightPopup = document.getElementById("fight-popup");
+
+    fightBtn.addEventListener("click", () => {
+      const fightAudio = document.getElementById("fightAudio");
+      if (fightAudio) {
+          fightAudio.currentTime = 0;
+          fightAudio.play();
+      }
+
+      fightPopup.style.display = "block";
+    });
+
+}
+
+playFightButton();

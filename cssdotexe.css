@@ -496,7 +496,7 @@ body {
     justify-content: space-around;
     flex-direction: column;
     border: solid 3px black;
-    margin-bottom: 50px;
+     margin-bottom: 50px;
  
 }
 
@@ -783,3 +783,56 @@ body {
       }
 }
 
+.flex-fight {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 200px;   
+}
+
+#fight-btn {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #c5d7d7;
+    animation: 3s pulse-animation-fight infinite;
+    padding: 20px 20px;
+    font-size: 15px; 
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 5px 5px black;
+}
+
+@keyframes pulse-animation-fight {
+   
+    0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
+}
+
+#fight-popup {
+    font-family: 'Press Start 2P', cursive;
+    color: black;
+    font-size: 40px;
+    text-align: center;
+    animation: 2s fight-popup ease-in-out forwards;
+}
+
+@keyframes fight-popup {
+    0% {
+        opacity: 0;
+      }
+      20% {
+        opacity: 1;
+      }
+      80% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+}
