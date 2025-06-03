@@ -599,15 +599,28 @@ body {
     gap: 10px;
 }
 
+.p1-speed-metric {
+    animation-name: fadeInP1Speed;
+    animation-timing-function: ease-in;
+    animation-duration: 5s;
+    border: solid 3px black;
+    width: 25%;
+}
+
+@keyframes fadeInP1Speed {
+    
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 .speed-icon {
     height: 20px;
     width: auto;
     padding-left: 80px;
-}
-
-.p1-speed-metric {
-    border: solid 3px black;
-    width: 30%;
 }
 
 .p1-energy {
@@ -624,8 +637,21 @@ body {
 }
 
 .p1-energy-metric {
+    animation-name: fadeInP1Energy;
+    animation-timing-function: ease-in;
+    animation-duration: 5s;
     border: solid 3px black;
     width: 37%;
+}
+
+@keyframes fadeInP1Energy {
+
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .metric2-container {
@@ -641,8 +667,21 @@ body {
 }
 
 .p2-hp-metric {
+    animation-name: fadeInP2Hp;
+    animation-timing-function: ease-in;
+    animation-duration: 5s;
     border: solid 3px black;
     width: 37%;
+}
+
+@keyframes fadeInP2Hp {
+    
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .p2-dps {
@@ -653,8 +692,21 @@ body {
 }
 
 .p2-dps-metric {
+    animation-name: fadeInP2Dps;
+    animation-timing-function: ease-in;
+    animation-duration: 5s;
     border: solid 3px black;
     width: 30%;
+}
+
+@keyframes fadeInP2Dps {
+
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .p2-speed {
@@ -665,8 +717,22 @@ body {
 }
 
 .p2-speed-metric {
+    animation-name: fadeInP2Speed;
+    animation-timing-function: ease-in;
+    animation-duration: 5s;
     border: solid 3px black;
     width: 32.5%;
+}
+
+@keyframes fadeInP2Speed {
+
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+
 }
 
 .p2-energy {
@@ -677,8 +743,22 @@ body {
 }
 
 .p2-energy-metric {
+    animation-name: fadeInP2Energy;
+    animation-timing-function: ease-in;
+    animation-duration: 5s;
     border: solid 3px black;
     width: 33%;
+}
+
+@keyframes fadeInP2Energy {
+
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+
 }
 
 
