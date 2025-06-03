@@ -496,6 +496,8 @@ body {
     justify-content: space-around;
     flex-direction: column;
     border: solid 3px black;
+    height: 800px;
+ 
 }
 
 .flex2-heading {
@@ -514,11 +516,20 @@ body {
 }
 
 .metric-bar {
-
     width: 50%;
     border: 1px solid black;
 }
 
+.metric-label {
+    width: 150px; 
+}
+
+.icon-label {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+  }
+  
 .p1-hp {
     display: flex;
     flex-direction: row;
