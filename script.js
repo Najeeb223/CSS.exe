@@ -11,20 +11,34 @@ function scrollToLegendSection() {
 
 scrollToLegendSection();
 
-function viewCSSUnits() {
+function viewPercentageUnit() {
 
-  const viewBtn = document.querySelector(".unit-btn");
+  const percentageBtn = document.getElementById("percentage-unit-btn");
   const percentageInfo = document.getElementById("percentage-info");
 
-  viewBtn.addEventListener("click", () => {
+  percentageBtn.addEventListener("click", () => {
 
     percentageInfo.style.display = "block";
         
   });
 
 }
+viewPercentageUnit();
 
-viewCSSUnits();
+function viewEmUnit() {
+
+  const emBtn = document.getElementById("em-unit-btn");
+  const emInfo = document.getElementById("em-info");
+
+  emBtn.addEventListener("click", () => {
+
+    emInfo.style.display = "block";
+        
+  });
+
+}
+
+  viewEmUnit();
 
 function selectPlayers() {
     const choosePlayersBtn = document.getElementById("grid-one-btn");

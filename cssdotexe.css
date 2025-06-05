@@ -107,7 +107,7 @@ p.bold {
 #css-units {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    gap: 90px;
     margin: 0 auto;
     max-width: 1000px;
     margin-bottom: 800px;
@@ -120,7 +120,7 @@ p.bold {
     border-radius: 20px;
     gap: 20px;
     width: 500px;
-    height: 300px;
+    height: 400px;
 }
 
 .unit-heading {
@@ -129,7 +129,7 @@ p.bold {
     justify-items: center;
 }
 
-.unit-btn {
+#percentage-unit-btn, #em-unit-btn {
     background-color: #c5d7d7;
     font-family: 'Press Start 2P', cursive;
     width: 70px;
@@ -180,6 +180,20 @@ p.bold {
     100% {
         opacity: 1;
     }
+}
+
+#em-info {
+    display: grid;
+    grid-template-columns: 2, auto;
+    justify-items: center;
+}
+
+#first-em {
+    font-size: 11px;
+}
+
+#second-em {
+    font-size: 2em;
 }
 
 

@@ -33,7 +33,7 @@
         <section id="css-units">
             <div class="unit-card">
                 <div class="unit-heading">
-                    <p>% - Percentage</p><button class="unit-btn">view</button> 
+                    <p class="unit-text">%</p><button id="percentage-unit-btn">view</button> 
             </div>
             <div id="percentage-info" class="mystic-text" style="display: none;">
                 <p>% is a relative unit based on the parent element’s dimensions. Use it to size containers, position elements, or fill bars based on dynamic proportions.</p>
@@ -41,6 +41,29 @@
                     <div id="percentage-metric"></div>
             </div>
             </div>      
+            </div>
+            <div class="unit-card">
+            <div class="unit-heading">
+                    <p class="unit-text">em</p><button id="em-unit-btn">view</button> 
+            </div>
+            <div id="em-info" class="mystic-text" style="display: none;">
+                <p>em sizes are relative to their parent’s font size.  If a parent is 12px, then 1em = 12px and 2em = 24px.  Nested em values multiply, so they can grow fast.</p>
+            <div id="em-example">
+                <p id="first-em">
+                    This font-size is 9px.
+                </br><span id="second-em">This font-size is 2em (2 x 9)= 18px</span>
+                  </p>
+            </div>
+            </div>
+            <div id="rem-info" class="mystic-text" style="display: none;">
+                <p>em sizes are relative to their parent’s font size.  If a parent is 12px, then 1em = 12px and 2em = 24px.  Nested em values multiply, so they can grow fast.</p>
+            <div id="em-example">
+                <p id="first-em">
+                    This font-size is 9px.
+                </br><span id="second-em">This font-size is 2em (2 x 9)= 18px</span>
+                  </p>
+            </div>
+            </div>            
             </div>    
         </section> 
         <div>    
