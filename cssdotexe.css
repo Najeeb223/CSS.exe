@@ -170,6 +170,16 @@ p.bold {
 #percentage-metric {
     width: 50%;
     border: solid 3px black;
+    animation: 5s animatePercentage ease-in;
+}
+
+@keyframes animatePercentage {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 

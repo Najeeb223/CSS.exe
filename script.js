@@ -11,6 +11,21 @@ function scrollToLegendSection() {
 
 scrollToLegendSection();
 
+function viewCSSUnits() {
+
+  const viewBtn = document.querySelector(".unit-btn");
+  const percentageInfo = document.getElementById("percentage-info");
+
+  viewBtn.addEventListener("click", () => {
+
+    percentageInfo.style.display = "block";
+        
+  });
+
+}
+
+viewCSSUnits();
+
 function selectPlayers() {
     const choosePlayersBtn = document.getElementById("grid-one-btn");
     const selectorOne = document.getElementById("player-selector-one");
