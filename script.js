@@ -40,6 +40,20 @@ function viewEmUnit() {
 
   viewEmUnit();
 
+function viewRemUnit() {
+
+  const remBtn = document.getElementById("rem-unit-btn")
+  const remInfo = document.getElementById("rem-info");
+
+  remBtn.addEventListener("click", () => {
+
+  remInfo.style.display = "block";
+
+  });
+}  
+
+  viewRemUnit();
+
 function selectPlayers() {
     const choosePlayersBtn = document.getElementById("grid-one-btn");
     const selectorOne = document.getElementById("player-selector-one");

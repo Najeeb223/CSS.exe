@@ -200,7 +200,23 @@ p.bold {
     font-size: 2em;
 }
 
+#em-info {
+    display: grid;
+    grid-template-columns: 2, auto;
+    justify-items: center;
+}
 
+#first-rem {
+    font-size: 8px;
+}
+
+#second-rem {
+    font-size: 2rem;
+}
+
+#third-rem {
+    font-size: 2rem;
+}
 #grid-one-btn {
     display: flex;
     justify-content: center;
