@@ -54,6 +54,19 @@ function viewRemUnit() {
 
   viewRemUnit();
 
+function viewCh() {
+
+  const chBtn = document.getElementById("ch-unit-btn");
+  const chInfo = document.getElementById("ch-info");
+
+  chBtn.addEventListener("click", () => {
+
+    chInfo.style.display = "block";
+  });
+}  
+
+viewCh();
+
 function selectPlayers() {
     const choosePlayersBtn = document.getElementById("grid-one-btn");
     const selectorOne = document.getElementById("player-selector-one");
