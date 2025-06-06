@@ -129,7 +129,7 @@ p.bold {
     justify-items: center;
 }
 
-#percentage-unit-btn, #em-unit-btn, #rem-unit-btn, #ch-unit-btn {
+#percentage-unit-btn, #em-unit-btn, #rem-unit-btn, #ch-unit-btn, #vh-unit-btn {
     background-color: #c5d7d7;
     font-family: 'Press Start 2P', cursive;
     width: 70px;
@@ -224,6 +224,34 @@ p.bold {
 
 #second-ch {
     width: 40ch;
+}
+
+#vh-info {
+    display: grid;
+    grid-template-columns: 2, auto;
+    justify-items: center;
+}
+
+#first-vh-btn {
+    background-color: #c5d7d7;
+    font-family: 'Press Start 2P', cursive;
+    width: 90px;
+    height: 10vh;
+    border-radius: 5px;
+    box-shadow: 5px 5px black;
+    margin-top: 10px;
+    margin-right: 80px;
+}
+
+#second-vh-btn {
+    background-color: #c5d7d7;
+    font-family: 'Press Start 2P', cursive;
+    width: 90px;
+    height: 20vh;
+    border-radius: 5px;
+    box-shadow: 5px 5px black;
+    margin-top: 10px;
+    margin-right: 80px;
 }
 #grid-one-btn {
     display: flex;
