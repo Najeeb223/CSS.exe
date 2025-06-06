@@ -129,7 +129,7 @@ p.bold {
     justify-items: center;
 }
 
-#percentage-unit-btn, #em-unit-btn, #rem-unit-btn, #ch-unit-btn, #vh-unit-btn, #vw-unit-btn {
+#percentage-unit-btn, #em-unit-btn, #rem-unit-btn, #ch-unit-btn, #vh-unit-btn, #vw-unit-btn, #vmin-unit-btn, #vmax-unit-btn {
     background-color: #c5d7d7;
     font-family: 'Press Start 2P', cursive;
     width: 70px;
@@ -282,6 +282,19 @@ p.bold {
     margin-right: 80px;
 }
 
+#vmin-info {
+    display: grid;
+    grid-template-columns: 2, auto;
+    justify-items: center;
+}
+
+#sword1 {
+    width: 5vmin;
+}
+
+#sword2 {
+    width: 10vmin;
+}
 #grid-one-btn {
     display: flex;
     justify-content: center;

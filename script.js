@@ -93,6 +93,19 @@ function viewVwUnit() {
 
 viewVwUnit();
 
+function viewVminUnit() {
+
+  const vminBtn = document.getElementById("vmin-unit-btn");
+  const vminInfo = document.getElementById("vmin-info");
+
+  vminBtn.addEventListener("click", () => {
+
+    vminInfo.style.display = "block";
+  });
+}
+
+viewVminUnit();
+
 function selectPlayers() {
     const choosePlayersBtn = document.getElementById("grid-one-btn");
     const selectorOne = document.getElementById("player-selector-one");
