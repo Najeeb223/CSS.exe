@@ -106,6 +106,19 @@ function viewVminUnit() {
 
 viewVminUnit();
 
+function viewVmaxUnit() {
+
+  const vmaxBtn = document.getElementById("vmax-unit-btn");
+  const vmaxInfo = document.getElementById("vmax-info");
+
+  vmaxBtn.addEventListener("click", () => {
+
+    vmaxInfo.style.display = "block";
+  });
+}
+
+viewVmaxUnit ();
+
 function selectPlayers() {
     const choosePlayersBtn = document.getElementById("grid-one-btn");
     const selectorOne = document.getElementById("player-selector-one");

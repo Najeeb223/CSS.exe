@@ -295,6 +295,21 @@ p.bold {
 #sword2 {
     width: 10vmin;
 }
+
+#vmax-info {
+    display: grid;
+    grid-template-columns: 2, auto;
+    justify-items: center;
+}
+
+#chest1 {
+    width: 2vmax;
+}
+
+#chest2 {
+    width: 8vmax;
+}
+
 #grid-one-btn {
     display: flex;
     justify-content: center;
