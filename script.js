@@ -54,7 +54,7 @@ function viewRemUnit() {
 
   viewRemUnit();
 
-function viewCh() {
+function viewChUnit() {
 
   const chBtn = document.getElementById("ch-unit-btn");
   const chInfo = document.getElementById("ch-info");
@@ -65,7 +65,33 @@ function viewCh() {
   });
 }  
 
-viewCh();
+viewChUnit();
+
+function viewVhUnit() {
+
+  const vhBtn = document.getElementById("vh-unit-btn");
+  const vhInfo = document.getElementById("vh-info");
+
+  vhBtn.addEventListener("click", () => {
+
+    vhInfo.style.display = "block";
+  });
+}
+
+viewVhUnit();
+
+function viewVwUnit() {
+
+  const vwBtn = document.getElementById("vw-unit-btn");
+  const vwInfo = document.getElementById("vw-info");
+
+  vwBtn.addEventListener("click", () => {
+
+    vwInfo.style.display = "block";
+  });
+}
+
+viewVwUnit();
 
 function selectPlayers() {
     const choosePlayersBtn = document.getElementById("grid-one-btn");

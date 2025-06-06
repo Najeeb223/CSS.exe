@@ -120,7 +120,7 @@ p.bold {
     border-radius: 20px;
     gap: 20px;
     width: 500px;
-    height: 400px;
+    height: 415px;
 }
 
 .unit-heading {
@@ -129,7 +129,7 @@ p.bold {
     justify-items: center;
 }
 
-#percentage-unit-btn, #em-unit-btn, #rem-unit-btn, #ch-unit-btn, #vh-unit-btn {
+#percentage-unit-btn, #em-unit-btn, #rem-unit-btn, #ch-unit-btn, #vh-unit-btn, #vw-unit-btn {
     background-color: #c5d7d7;
     font-family: 'Press Start 2P', cursive;
     width: 70px;
@@ -253,6 +253,35 @@ p.bold {
     margin-top: 10px;
     margin-right: 80px;
 }
+
+#vw-info {
+    display: grid;
+    grid-template-columns: 2, auto;
+    justify-items: center;
+}
+
+#first-vw-btn {
+    background-color: #c5d7d7;
+    font-family: 'Press Start 2P', cursive;
+    width: 10vw;
+    height: 10vh;
+    border-radius: 5px;
+    box-shadow: 5px 5px black;
+    margin-top: 10px;
+    margin-right: 80px;
+}
+
+#second-vw-btn {
+    background-color: #c5d7d7;
+    font-family: 'Press Start 2P', cursive;
+    width: 20vw;
+    height: 10vh;
+    border-radius: 5px;
+    box-shadow: 5px 5px black;
+    margin-top: 10px;
+    margin-right: 80px;
+}
+
 #grid-one-btn {
     display: flex;
     justify-content: center;
