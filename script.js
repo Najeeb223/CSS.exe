@@ -256,14 +256,16 @@ playFightButton();
 
 
 
-    const animateMetricBars = document.querySelectorAll(".stat-bar");
+const metricBars = document.querySelectorAll(".p1-hp-stat-bar");
 
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if(entry.isIntersecting) {
-              entry.target.classList.add("animate");
-            }
-        });
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("animate");
+    }
+  });
+});
 
-    }); 
-
+metricBars.forEach(bar => {
+  observer.observe(bar);
+});

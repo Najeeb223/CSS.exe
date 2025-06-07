@@ -757,23 +757,18 @@ p.bold {
     padding-left: 80px;
 }
 
-.p1-hp-metric {
-    animation-name: fadeInP1Hp;
-    animation-timing-function: ease-in;
-    animation-duration: 5s;
+.p1-hp-stat-bar {
+    opacity: 0;
+    width: 0%;
+    transition: width 2s ease, opacity 1s ease;
     border: solid 3px black;
-    width: 45%;
+ 
 }
 
-@keyframes fadeInP1Hp {
-
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
+.p1-hp-stat-bar.animate {
+    opacity: 1;
+    width: 45%; 
+  }
 
 .p1-dps {
     display: flex;
