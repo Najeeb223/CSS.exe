@@ -12,7 +12,6 @@ body {
     padding: 10px;  
     margin-bottom: 50px;
     border-bottom: 10px solid black;
-    width: 100vw;
 }
 
 .heading h1 {
@@ -30,7 +29,7 @@ body {
   
   #jc-logo img {
     height: 30px;
-    width: auto; /* maintains aspect ratio */
+    width: auto; 
   }
 
 .start-heading {
@@ -535,10 +534,10 @@ p.bold {
 
 @keyframes blast {
     0%, 100% {
-      transform: translateY(0);
+      transform: translateX(0);
     }
     50% {
-      transform: translateY(-20px);
+      transform: translateX(-20px);
     }
   }
 
@@ -628,7 +627,7 @@ p.bold {
 
 .flex-ready {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     margin-bottom: 200px;
 }
@@ -639,6 +638,8 @@ p.bold {
     animation: 3s pulse-animation-ready infinite;
     padding: 20px 20px;
     font-size: 15px; 
+    max-width: 120px;
+    margin: 0 auto;
     border-radius: 10px;
     cursor: pointer;
     box-shadow: 5px 5px black;
@@ -997,7 +998,7 @@ p.bold {
 
 .flex-fight {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     margin-bottom: 50px;   
 }
@@ -1006,6 +1007,8 @@ p.bold {
     font-family: 'Press Start 2P', cursive;
     background-color: #c5d7d7;
     animation: 3s pulse-animation-fight infinite;
+    max-width: 120px;
+    margin: 0 auto;
     padding: 20px 20px;
     font-size: 15px; 
     border-radius: 10px;
