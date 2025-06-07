@@ -9,8 +9,10 @@ body {
     font-family: 'Press Start 2P', cursive;
     text-align: center;  
     margin: 0 auto;  
-    padding: 20px;  
+    padding: 10px;  
     margin-bottom: 50px;
+    border-bottom: 10px solid black;
+    width: 100vw;
 }
 
 .heading h1 {
@@ -18,21 +20,18 @@ body {
     font-size: 2.5rem; 
 }
 
-.jc-logo {
-    display: block;  
-    margin: 0 auto;  
-    padding: 10px 0;  
-    max-height: 50px;
-    max-width: 70px;
-}
 
-.heading p {
-    font-family: 'IBM Plex Mono', cursive;
-    margin-top: 10px;  /* Space between heading and paragraph */
-    margin-bottom: 20px;  /* Space between paragraph and other content */
-    border-bottom: 10px solid black;  /* Border beneath the paragraph */
-    text-align: center;  /* Ensure the text is centered */
-}
+#jc-logo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px;
+  }
+  
+  #jc-logo img {
+    height: 30px;
+    width: auto; /* maintains aspect ratio */
+  }
 
 .start-heading {
     font-family: 'Press Start 2P', cursive;
@@ -529,17 +528,17 @@ p.bold {
     }
   }
 
-#cannon-blast {
-    animation: recoil 0.5s ease-in-out infinite;
+#fist-blast {
+    animation: blast 0.5s ease-in-out infinite;
     transform-origin: center;
 }
 
-@keyframes recoil {
+@keyframes blast {
     0%, 100% {
-      transform: translateX(0);
+      transform: translateY(0);
     }
     50% {
-      transform: translateX(-15px);
+      transform: translateY(-20px);
     }
   }
 
