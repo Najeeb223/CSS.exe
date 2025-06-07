@@ -253,3 +253,17 @@ function playFightButton() {
 }
 
 playFightButton();
+
+
+
+    const animateMetricBars = document.querySelectorAll(".stat-bar");
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if(entry.isIntersecting) {
+              entry.target.classList.add("animate");
+            }
+        });
+
+    }); 
+

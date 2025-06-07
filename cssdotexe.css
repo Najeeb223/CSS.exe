@@ -565,6 +565,7 @@ p.bold {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    border: solid 3px black;
     margin-bottom: 50px;
 
 }
