@@ -450,7 +450,7 @@ p.bold {
     max-width: 800px;
     grid-template-columns: 70px 1fr;    
     grid-template-rows: repeat(4, 200px);    
-    gap: 40px 40px;
+    gap: 80px 80px;
     text-align: left;
     margin-bottom: 400px;
     
@@ -545,7 +545,7 @@ p.bold {
 
   .grid-info {
     animation: mysticFade 1s ease forwards;
-    margin-top: 10px;
+    margin-top: -60px;
     font-size: 0.9rem;
     color: black;
     opacity: 0;
