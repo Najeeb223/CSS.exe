@@ -256,16 +256,55 @@ playFightButton();
 
 
 
-const metricBars = document.querySelectorAll(".p1-hp-stat-bar");
+const p1HpBar = document.querySelectorAll(".p1-hp-stat-bar");
+const p1DpsBar = document.querySelectorAll(".p1-dps-stat-bar");
+const p1SpeedBar = document.querySelectorAll(".p1-speed-stat-bar");
+const p1EnergyBar = document.querySelectorAll(".p1-energy-stat-bar");
+
+const p2HpBar = document.querySelectorAll(".p2-hp-stat-bar");
+const p2DpsBar = document.querySelectorAll(".p2-dps-stat-bar");
+const p2SpeedBar = document.querySelectorAll(".p2-speed-stat-bar");
+const p2EnergyBar = document.querySelectorAll(".p2-energy-stat-bar");
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.classList.add("animate");
+    } else {
+      entry.target.classList.remove("animate");
     }
   });
 });
 
-metricBars.forEach(bar => {
+  p1HpBar.forEach(bar => {
   observer.observe(bar);
-});
+  });
+
+  p1DpsBar.forEach(bar => {
+  observer.observe(bar);
+
+  });
+
+  p1SpeedBar.forEach(bar => {
+  observer.observe(bar);
+  });
+
+  p1EnergyBar.forEach(bar => {
+  observer.observe(bar);
+  });
+
+  p2HpBar.forEach(bar => {
+  observer.observe(bar);
+  });
+
+  p2DpsBar.forEach(bar => {
+  observer.observe(bar);
+  });
+
+  p2SpeedBar.forEach(bar => {
+  observer.observe(bar);  
+  });
+
+  p2EnergyBar.forEach(bar => {
+  observer.observe(bar);  
+  });
