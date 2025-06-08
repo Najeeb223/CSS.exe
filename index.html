@@ -35,9 +35,10 @@
         <section id="css-units">
         <div class="unit-card">
         <div class="unit-heading">
-                    <p class="unit-text">%</p><button id="percentage-unit-btn">view</button> 
+                    <p class="unit-text">%</p><label class="view-switch" for="view-check">
+                    <input type="checkbox" id="view-check"/><span class="slider"></span></label>
             </div>
-            <div id="percentage-info" class="mystic-text" style="display: none;">
+            <div id="percentage-info">
                 <p>% is a relative unit based on the parent element’s dimensions. Use it to size containers, position elements, or fill bars based on dynamic proportions.</p>
             <div id="percentage-bar">
                     <div id="percentage-metric"></div>
