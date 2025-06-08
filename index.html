@@ -35,10 +35,9 @@
         <section id="css-units">
         <div class="unit-card">
         <div class="unit-heading">
-                    <p class="unit-text">%</p><label class="view-switch" for="view-check">
-                    <input type="checkbox" id="view-check"/><span class="slider"></span></label>
+                    <p class="unit-text">%</p><button id="percentage-unit-btn">view</button><button id="hide-percentage-btn">hide</button> 
             </div>
-            <div id="percentage-info">
+            <div id="percentage-info" class="mystic-text" style="display: none;">
                 <p>% is a relative unit based on the parent element’s dimensions. Use it to size containers, position elements, or fill bars based on dynamic proportions.</p>
             <div id="percentage-bar">
                     <div id="percentage-metric"></div>
@@ -47,7 +46,7 @@
             </div>
             <div class="unit-card">
             <div class="unit-heading">
-                    <p class="unit-text">em</p><button id="em-unit-btn">view</button> 
+                    <p class="unit-text">em</p><button id="em-unit-btn">view</button></button><button id="hide-em-btn">hide</button>
             </div>
             <div id="em-info" class="mystic-text" style="display: none;">
                 <p>em sizes are relative to their parent’s font size.  If a parent is 12px, then 1em = 12px and 2em = 24px.  Nested em values multiply, so they can grow fast.</p>
@@ -62,7 +61,7 @@
             </div> 
             <div class="unit-card">
                 <div class="unit-heading">
-                        <p class="unit-text">rem</p><button id="rem-unit-btn">view</button> 
+                        <p class="unit-text">rem</p><button id="rem-unit-btn">view</button></button><button id="hide-rem-btn">hide</button> 
                 </div>
                 <div id="rem-info" class="mystic-text" style="display: none;">
                     <p>rem sizes are relative to the root element’s font size, not their parent. If the root is 10px, then 1rem = 10px and 2rem = 20px anywhere on the page. rem is consistent, no matter where it’s used.</p>
@@ -79,7 +78,7 @@
                 </div>
             <div class="unit-card">
             <div class="unit-heading">
-                    <p class="unit-text">ch</p><button id="ch-unit-btn">view</button> 
+                    <p class="unit-text">ch</p><button id="ch-unit-btn">view</button></button><button id="hide-ch-btn">hide</button> 
             </div>
             <div id="ch-info" class="mystic-text" style="display: none;">
                 <p>ch is based on the width of the character "0" in the current font. 1ch = the width of one "0", 10ch = ten zeros wide. It’s great for sizing inputs and aligning type.</p>
@@ -91,7 +90,7 @@
             </div>
             <div class="unit-card">
             <div class="unit-heading">
-                        <p class="unit-text">vh</p><button id="vh-unit-btn">view</button> 
+                        <p class="unit-text">vh</p><button id="vh-unit-btn">view</button></button><button id="hide-vh-btn">hide</button> 
             </div>
             <div id="vh-info" class="mystic-text" style="display: none;">
                     <p>Viewport height (vh) is generally used to set the height of layouts or elements by controlling what percentage of the visible screen they take up, the below example showcases 10vh and 20vh.</p>
@@ -104,7 +103,7 @@
             </div>
             <div class="unit-card">
             <div class="unit-heading">
-                            <p class="unit-text">vw</p><button id="vw-unit-btn">view</button> 
+                            <p class="unit-text">vw</p><button id="vw-unit-btn">view</button></button><button id="hide-vw-btn">hide</button> 
             </div>
             <div id="vw-info" class="mystic-text" style="display: none;">
                         <p>vw stands for viewport width, 1vw equals 1% of the browser window's width, making it useful for responsive layouts that scale with the screen size.</p>
@@ -117,7 +116,7 @@
             </div>
             <div class="unit-card">
             <div class="unit-heading">
-                                <p class="unit-text">vmin</p><button id="vmin-unit-btn">view</button> 
+                                <p class="unit-text">vmin</p><button id="vmin-unit-btn">view</button></button><button id="hide-vmin-btn">hide</button> 
             </div>
             <div id="vmin-info" class="mystic-text" style="display: none;">
                 <p><code>vmin</code> is a relative unit that equals 1% of the smaller value between the viewport’s width and height, making it useful for responsive designs that adapt to limited screen dimensions, with the below examples showcasing a sword with widths of 5vmin and 10vmin respectively.</p>
@@ -129,7 +128,7 @@
             </div>
             <div class="unit-card">
             <div class="unit-heading">
-                                <p class="unit-text">vmax</p><button id="vmax-unit-btn">view</button> 
+                                <p class="unit-text">vmax</p><button id="vmax-unit-btn">view</button></button><button id="hide-vmax-btn">hide</button> 
             </div>
             <div id="vmax-info" class="mystic-text" style="display: none;">
                 <p><code>vmax</code> is a relative unit that equals 1% of the larger value between the viewport’s width and height, making it ideal for scaling elements on spacious screens, with the below examples showcasing a treasure chest with widths of 2vmax and 8vmax respectively.</p>

@@ -16,9 +16,12 @@ function viewPercentageUnit() {
   const percentageBtn = document.getElementById("percentage-unit-btn");
   const percentageInfo = document.getElementById("percentage-info");
 
+
   percentageBtn.addEventListener("click", () => {
 
     percentageInfo.style.display = "block";
+
+
         
   });
 
@@ -118,6 +121,115 @@ function viewVmaxUnit() {
 }
 
 viewVmaxUnit ();
+
+function hideAllUnits() {
+  
+  const percentageInfo = document.getElementById("percentage-info");
+  const emInfo = document.getElementById("em-info");
+  const remInfo = document.getElementById("rem-info");
+  const chInfo = document.getElementById("ch-info");
+  const vhInfo = document.getElementById("vh-info");
+  const vwInfo = document.getElementById("vw-info");
+  const vminInfo = document.getElementById("vmin-info");
+  const vmaxInfo = document.getElementById("vmax-info");
+
+  const cssUnitsInfo = [percentageInfo, emInfo, remInfo, chInfo, vhInfo, vwInfo, vminInfo, vmaxInfo];
+
+  cssUnitsInfo.forEach(unit => {
+    if (unit) {
+    unit.style.display = "none";
+    }
+  });
+}
+
+
+function hidePercentageUnit() {
+
+  const hidePercentageBtn = document.getElementById("hide-percentage-btn");
+  const percentageInfo = document.getElementById("percentage-info");
+
+  hidePercentageBtn.addEventListener("click", () => {
+
+    percentageInfo.style.display = "none";
+
+  });
+
+
+}
+hidePercentageUnit();
+
+function hideEmUnit() {
+
+  const hideEmBtn = document.getElementById("hide-em-btn");
+  const EmInfo = document.getElementById("em-info");
+
+  hideEmBtn.addEventListener("click", () => {
+
+    EmInfo.style.display = "none";
+
+  });
+
+
+}
+hideEmUnit();
+
+
+function hideRemUnit() {
+
+  const hidRemBtn = document.getElementById("hide-rem-btn");
+  const RemInfo = document.getElementById("rem-info");
+
+  hidRemBtn.addEventListener("click", () => {
+
+    RemInfo.style.display = "none";
+
+  });
+
+
+}
+hideRemUnit();
+
+/*
+const hidePercentageBtn = document.getElementById("hide-percentage-btn");
+const hideEmBtn = document.getElementById("hide-em-btn");
+const hideRemBtn = document.getElementById("hide-rem-btn");
+const hideChBtn = document.getElementById("hide-ch-btn");
+const hideVhBtn = document.getElementById("hide-vh-btn");
+const hideVwBtn = document.getElementById("hide-vw-btn");
+const hideVminBtn = document.getElementById("hide-vmin-btn");
+const hideVmaxBtn = document.getElementById("hide-vmax-btn");
+
+if (hidePercentageBtn) {
+  hidePercentageBtn.addEventListener("click", hideAllUnits);
+}
+
+if (hideEmBtn) {
+  hideEmBtn.addEventListener("click", hideAllUnits);
+}
+
+if (hideRemBtn) {
+  hideRemBtn.addEventListener("click", hideAllUnits);
+}
+
+/*
+function hideUnitInfo() {
+ 
+  const hideUnitInfo = document.querySelector(".hide-unit-btn");
+  const percentageInfo = document.getElementById("percentage-info");
+  const emInfo = document.getElementById("em-info");
+
+  hideUnitInfo.addEventListener("click", () => {
+
+  percentageInfo.style.display = "none";
+  emInfo.style.display = "none";
+    
+});
+}
+
+hideUnitInfo();
+
+*/
+
 
 function selectPlayers() {
     const choosePlayersBtn = document.getElementById("grid-one-btn");
