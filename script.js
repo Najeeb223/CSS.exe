@@ -122,26 +122,6 @@ function viewVmaxUnit() {
 
 viewVmaxUnit ();
 
-function hideAllUnits() {
-  
-  const percentageInfo = document.getElementById("percentage-info");
-  const emInfo = document.getElementById("em-info");
-  const remInfo = document.getElementById("rem-info");
-  const chInfo = document.getElementById("ch-info");
-  const vhInfo = document.getElementById("vh-info");
-  const vwInfo = document.getElementById("vw-info");
-  const vminInfo = document.getElementById("vmin-info");
-  const vmaxInfo = document.getElementById("vmax-info");
-
-  const cssUnitsInfo = [percentageInfo, emInfo, remInfo, chInfo, vhInfo, vwInfo, vminInfo, vmaxInfo];
-
-  cssUnitsInfo.forEach(unit => {
-    if (unit) {
-    unit.style.display = "none";
-    }
-  });
-}
-
 
 function hidePercentageUnit() {
 
@@ -189,46 +169,87 @@ function hideRemUnit() {
 }
 hideRemUnit();
 
-/*
-const hidePercentageBtn = document.getElementById("hide-percentage-btn");
-const hideEmBtn = document.getElementById("hide-em-btn");
-const hideRemBtn = document.getElementById("hide-rem-btn");
-const hideChBtn = document.getElementById("hide-ch-btn");
-const hideVhBtn = document.getElementById("hide-vh-btn");
-const hideVwBtn = document.getElementById("hide-vw-btn");
-const hideVminBtn = document.getElementById("hide-vmin-btn");
-const hideVmaxBtn = document.getElementById("hide-vmax-btn");
+function hideChUnit() {
 
-if (hidePercentageBtn) {
-  hidePercentageBtn.addEventListener("click", hideAllUnits);
+  const hideChBtn = document.getElementById("hide-ch-btn");
+  const chInfo = document.getElementById("ch-info");
+
+  hideChBtn.addEventListener("click", () => {
+
+    chInfo.style.display = "none";
+
+  });
+
+
 }
 
-if (hideEmBtn) {
-  hideEmBtn.addEventListener("click", hideAllUnits);
+hideChUnit();
+
+function hideVhUnit() {
+
+  const hideVhBtn = document.getElementById("hide-vh-btn");
+  const vhInfo = document.getElementById("vh-info");
+
+  hideVhBtn.addEventListener("click", () => {
+
+    vhInfo.style.display = "none";
+
+  });
+
+
 }
 
-if (hideRemBtn) {
-  hideRemBtn.addEventListener("click", hideAllUnits);
+hideVhUnit();
+
+function hideVwUnit() {
+
+  const hideVwBtn = document.getElementById("hide-vw-btn");
+  const vwInfo = document.getElementById("vw-info");
+
+  hideVwBtn.addEventListener("click", () => {
+
+    vwInfo.style.display = "none";
+
+  });
+
 }
 
-/*
-function hideUnitInfo() {
- 
-  const hideUnitInfo = document.querySelector(".hide-unit-btn");
-  const percentageInfo = document.getElementById("percentage-info");
-  const emInfo = document.getElementById("em-info");
+hideVwUnit();
 
-  hideUnitInfo.addEventListener("click", () => {
+function hideVminUnit() {
 
-  percentageInfo.style.display = "none";
-  emInfo.style.display = "none";
-    
-});
+  const hideVminBtn = document.getElementById("hide-vmin-btn");
+  const vminInfo = document.getElementById("vmin-info");
+
+  hideVminBtn.addEventListener("click", () => {
+
+    vminInfo.style.display = "none";
+
+  });
+
 }
 
-hideUnitInfo();
+hideVminUnit();
 
-*/
+function hideVmaxUnit () {
+
+  const hideVmaxBtn = document.getElementById("hide-vmax-btn");
+  const vmaxInfo = document.getElementById("vmax-info");
+
+  hideVmaxBtn.addEventListener("click", () => {
+
+    vmaxInfo.style.display = "none";
+
+  });
+
+}
+
+hideVmaxUnit();
+
+
+
+
+
 
 
 function selectPlayers() {
