@@ -1,16 +1,15 @@
 body {
     background-color: #c5d7d7;
-    font-family: 'IBM Plex Mono', cursive;
+    font-family: 'IBM Plex Mono', monospace, sans-serif;
 }
 
 .heading {
     display: flex;
     flex-direction: column;
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Press Start 2P', monospace, sans-serif;;
     text-align: center;  
-    margin: 0 auto;  
+    margin: 0 auto 50px auto; 
     padding: 10px;  
-    margin-bottom: 50px;
     border-bottom: 10px solid black;
 }
 
@@ -33,7 +32,7 @@ body {
   }
 
 .start-heading {
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Press Start 2P', monospace, sans-serif;;
     font-size: 40px;
 }
 
@@ -45,7 +44,7 @@ body {
     animation-timing-function: ease-in;
     animation-duration: 5s;
     gap: 50px;
-    margin-bottom: 700px;
+    margin-bottom: 400px;
 }
 @keyframes fadeInStartGame {
     0% {
@@ -60,10 +59,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Press Start 2P', monospace, sans-serif;;
     background-color: #c5d7d7;
     animation: 3s pulse-animation infinite;
-    padding: 20px 20px;
+    padding: 20px;
     font-size: 15px; 
     border-radius: 10px;
     cursor: pointer;
@@ -83,7 +82,7 @@ body {
 }
 
 .legend {
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Press Start 2P', monospace, sans-serif;;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -94,11 +93,12 @@ body {
 p.bold {
     font-weight: 900;
 }
+
 #units-explanation {
     display: flex;
     align-items: center;
     flex-direction: column;
-    font-family: 'IBM Plex Mono', cursive;
+    font-family: 'IBM Plex Mono', monospace, sans-serif;;
     margin-bottom: 30px;
 }
 
@@ -116,7 +116,6 @@ p.bold {
     box-shadow: 0 0 0 10px black;
     box-sizing: border-box;
     border-radius: 20px;
-    gap: 20px;
     width: 500px;
     height: 440px;
 }
@@ -129,7 +128,7 @@ p.bold {
 
 #percentage-unit-btn, #em-unit-btn, #rem-unit-btn, #ch-unit-btn, #vh-unit-btn, #vw-unit-btn, #vmin-unit-btn, #vmax-unit-btn {
     background-color: #c5d7d7;
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Press Start 2P', monospace, sans-serif;;
     width: 70px;
     border-radius: 5px;
     box-shadow: 5px 5px black;
@@ -138,25 +137,10 @@ p.bold {
     margin-left: 190px;
     cursor: pointer;
 }
-/*
-@keyframes viewAndHideBtnPulse {
-    
-      0% {
-        transform: scale(1);
-      }
-      50% {
-        transform: scale(1.1);
-      }
-      100% {
-        transform: scale(1);
-      }
-    
-}
-      */
     
 #hide-percentage-btn, #hide-em-btn, #hide-rem-btn, #hide-ch-btn, #hide-vh-btn, #hide-vw-btn, #hide-vmin-btn, #hide-vmax-btn {
     background-color: #c5d7d7;
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Press Start 2P', monospace, sans-serif;;
     width: 70px;
     border-radius: 5px;
     box-shadow: 5px 5px black;
@@ -168,7 +152,7 @@ p.bold {
 
 #percentage-info {
     display: grid;
-    grid-template-columns: 2, auto;
+    grid-template-columns: 2fr auto;
     justify-items: center;
     gap: 5px;
 }
@@ -195,7 +179,7 @@ p.bold {
 
 #em-info {
     display: grid;
-    grid-template-columns: 2, auto;
+    grid-template-columns: 2fr auto;
     justify-items: center;
 }
 
@@ -209,12 +193,6 @@ p.bold {
 
 #third-em {
     font-size: 2em;
-}
-
-#em-info {
-    display: grid;
-    grid-template-columns: 2, auto;
-    justify-items: center;
 }
 
 #first-rem {
@@ -239,13 +217,13 @@ p.bold {
 
 #vh-info {
     display: grid;
-    grid-template-columns: 2, auto;
+    grid-template-columns: 2fr auto;
     justify-items: center;
 }
 
 #first-vh-btn {
     background-color: #c5d7d7;
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Press Start 2P', monospace, sans-serif;;
     width: 90px;
     height: 10vh;
     border-radius: 5px;
@@ -256,7 +234,7 @@ p.bold {
 
 #second-vh-btn {
     background-color: #c5d7d7;
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Press Start 2P', monospace, sans-serif;;
     width: 90px;
     height: 20vh;
     border-radius: 5px;
@@ -267,13 +245,13 @@ p.bold {
 
 #vw-info {
     display: grid;
-    grid-template-columns: 2, auto;
+    grid-template-columns: 2fr auto;
     justify-items: center;
 }
 
 #first-vw-btn {
     background-color: #c5d7d7;
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Press Start 2P', monospace, sans-serif;;
     width: 10vw;
     height: 10vh;
     border-radius: 5px;
@@ -284,7 +262,7 @@ p.bold {
 
 #second-vw-btn {
     background-color: #c5d7d7;
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Press Start 2P', monospace, sans-serif;;
     width: 20vw;
     height: 10vh;
     border-radius: 5px;
@@ -295,7 +273,7 @@ p.bold {
 
 #vmin-info {
     display: grid;
-    grid-template-columns: 2, auto;
+    grid-template-columns: 2fr auto;
     justify-items: center;
 }
 
@@ -309,7 +287,7 @@ p.bold {
 
 #vmax-info {
     display: grid;
-    grid-template-columns: 2, auto;
+    grid-template-columns: 2fr auto;
     justify-items: center;
 }
 
@@ -326,7 +304,7 @@ p.bold {
     justify-content: center;
     margin: 0 auto;
     margin-bottom: 100px;
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Press Start 2P', monospace, sans-serif;;
     background-color: #c5d7d7;
     font-size: 20px;
     border-radius: 10px;
@@ -384,8 +362,6 @@ p.bold {
     width: 400px;
     height: 300px;
     position: absolute;
-    pointer-events: none;
-    transition: none;
     top: 0px;     
     left: 0px; 
     z-index: 10;
@@ -400,8 +376,6 @@ p.bold {
     width: 400px;
     height: 300px;
     position: absolute;
-    pointer-events: none;
-    transition: none;
     top: 0px;     
     left: 0px; 
     z-index: 10;
@@ -636,7 +610,7 @@ p.bold {
 
 .icons {
     height: 20px;
-    width: auto
+    width: auto;
 }
 
 .flex-ready {
@@ -647,7 +621,7 @@ p.bold {
 }
 
 #ready-btn {
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Press Start 2P', monospace, sans-serif;;
     background-color: #c5d7d7;
     animation: 3s pulse-animation-ready infinite;
     padding: 20px 20px;
@@ -672,7 +646,7 @@ p.bold {
 }
 
 #round-popup {
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Press Start 2P', monospace, sans-serif;;
     color: black;
     font-size: 40px;
     text-align: center;
@@ -868,80 +842,80 @@ p.bold {
     gap: 20px;
 }
 
-.p2-hp {
+.p4-hp {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 10px;
 }
 
-.p2-hp-stat-bar {
+.p4-hp-stat-bar {
     opacity: 0;
     width: 0%;
     transition: width 2s ease, opacity 1s ease;
     border: solid 3px black;
 }
 
-.p2-hp-stat-bar.animate {
+.p4-hp-stat-bar.animate {
     opacity: 1;
     width: 37%;
 }
 
-.p2-dps {
+.p4-dps {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 10px;
 }
 
-.p2-dps-stat-bar {
+.p4-dps-stat-bar {
     opacity: 0;
     width: 0%;
     transition: width 2s ease, opacity 1s ease;
     border: solid 3px black;
 }
 
-.p2-dps-stat-bar.animate {
+.p4-dps-stat-bar.animate {
     opacity: 1;
     width: 30%;
 }
 
-.p2-speed {
+.p4-speed {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 10px;
 }
 
-.p2-speed-stat-bar {
+.p4-speed-stat-bar {
     opacity: 0;
     width: 0%;
     transition: width 2s ease, opacity 1s ease;
     border: solid 3px black;
 }
 
-.p2-speed-stat-bar.animate {
+.p4-speed-stat-bar.animate {
     opacity: 1;
     width: 32.5%;
 }
 
 
 
-.p2-energy {
+.p4-energy {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 10px;
 }
 
-.p2-energy-stat-bar {
+.p4-energy-stat-bar {
     opacity: 0;
     width: 0%;
     transition: width 2s ease, opacity 1s ease;
     border: solid 3px black;
 }
 
-.p2-energy-stat-bar.animate {
+.p4-energy-stat-bar.animate {
     opacity: 1;
     width: 33%;
 }
@@ -977,7 +951,7 @@ p.bold {
 }
 
 #fight-btn {
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Press Start 2P', monospace, sans-serif;;
     background-color: #c5d7d7;
     animation: 3s pulse-animation-fight infinite;
     max-width: 120px;
@@ -987,6 +961,7 @@ p.bold {
     border-radius: 10px;
     cursor: pointer;
     box-shadow: 5px 5px black;
+    margin-bottom: 100px;
 }
 
 @keyframes pulse-animation-fight {
@@ -1003,7 +978,7 @@ p.bold {
 }
 
 #fight-popup {
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Press Start 2P', monospace, sans-serif;;
     color: black;
     font-size: 40px;
     text-align: center;
@@ -1031,6 +1006,7 @@ p.bold {
     font-size: 0.9rem;
     color: black;
     transition: opacity 0.7s ease;  
+    margin-bottom: 200px;
 }
 
 @keyframes mysticFadeFlexTwo {
@@ -1043,4 +1019,20 @@ p.bold {
         transform: translateY(0);
       }
 
+}
+
+.logo-links {   
+    max-width: 25px;
+    max-height: 25px;
+    cursor: pointer;
+}
+
+#contact-links {
+    display: flex;
+    justify-content: center;
+}
+
+#github-logo, #linkedin-logo, #x-logo {
+    padding-left: 30px;
+    padding-right: 30px;
 }

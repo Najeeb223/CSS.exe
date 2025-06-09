@@ -394,10 +394,10 @@ const p1DpsBar = document.querySelectorAll(".p1-dps-stat-bar");
 const p1SpeedBar = document.querySelectorAll(".p1-speed-stat-bar");
 const p1EnergyBar = document.querySelectorAll(".p1-energy-stat-bar");
 
-const p2HpBar = document.querySelectorAll(".p2-hp-stat-bar");
-const p2DpsBar = document.querySelectorAll(".p2-dps-stat-bar");
-const p2SpeedBar = document.querySelectorAll(".p2-speed-stat-bar");
-const p2EnergyBar = document.querySelectorAll(".p2-energy-stat-bar");
+const p4HpBar = document.querySelectorAll(".p4-hp-stat-bar");
+const p4DpsBar = document.querySelectorAll(".p4-dps-stat-bar");
+const p4SpeedBar = document.querySelectorAll(".p4-speed-stat-bar");
+const p4EnergyBar = document.querySelectorAll(".p4-energy-stat-bar");
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
@@ -426,18 +426,18 @@ const observer = new IntersectionObserver((entries) => {
   observer.observe(bar);
   });
 
-  p2HpBar.forEach(bar => {
+  p4HpBar.forEach(bar => {
   observer.observe(bar);
   });
 
-  p2DpsBar.forEach(bar => {
+  p4DpsBar.forEach(bar => {
   observer.observe(bar);
   });
 
-  p2SpeedBar.forEach(bar => {
+  p4SpeedBar.forEach(bar => {
   observer.observe(bar);  
   });
 
-  p2EnergyBar.forEach(bar => {
+  p4EnergyBar.forEach(bar => {
   observer.observe(bar);  
   });
