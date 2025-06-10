@@ -1,39 +1,56 @@
 body {
     background-color: #c5d7d7;
     font-family: 'IBM Plex Mono', monospace, sans-serif;
+     overflow-x: hidden;
 }
 
-.heading {
+.header-wrapper {
     display: flex;
-    flex-direction: column;
-    font-family: 'Press Start 2P', monospace, sans-serif;;
-    text-align: center;  
-    margin: 0 auto 50px auto; 
-    padding: 10px;  
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
     border-bottom: 10px solid black;
-}
-
-.heading h1 {
-    margin: 0; 
-    font-size: 2.5rem; 
-}
-
-
-#jc-logo {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 20px;
+    margin-bottom: 50px;
   }
   
-  #jc-logo img {
-    height: 30px;
-    width: auto; 
+  .heading {
+    font-family: 'Press Start 2P', monospace, sans-serif;
+    text-align: left;
+    margin: 0;
+    font-size: 2.5rem;
+    flex: 1; 
   }
+  
+  /* Logo container */
+  #jc-logo img {
+    height: 40px; 
+    width: auto;
+  }
+  
+  @media (max-width: 460px) {
+    .header-wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .heading {
+      text-align: center;
+      font-size: 1.6rem;
+      margin-bottom: 15px;
+      flex: none;
+    }
+  
+    #jc-logo img {
+      height: 22px;
+    }
+  }
+  
 
 .start-heading {
     font-family: 'Press Start 2P', monospace, sans-serif;;
     font-size: 40px;
+    width: 100%;
+    text-align: center;
 }
 
 .start-game {
@@ -90,9 +107,19 @@ body {
     margin-bottom: 80px;
 }
 
+.legend h2 {
+    text-align: center;
+    width: 100%;
+  }
+
 p.bold {
     font-weight: 900;
 }
+
+.legend p {
+    padding-right: 30px;
+}
+
 
 #units-explanation {
     display: flex;
@@ -111,6 +138,12 @@ p.bold {
     margin-bottom: 800px;
 }
 
+@media (max-width: 768px) {
+    #css-units {
+        grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
 .unit-card {
     border: none;
     box-shadow: 0 0 0 10px black;
@@ -120,15 +153,33 @@ p.bold {
     height: 440px;
 }
 
+@media (max-width: 600px) {
+    .unit-card {
+      width: 90vw;
+      max-width: 350px;
+      height: auto;
+    }
+  }
+
+
 .unit-heading {
     display: grid;
     grid-template-columns: repeat(3, auto);
     justify-items: center;
 }
 
+@media (max-width: 600px) {
+    .unit-heading {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;;
+    }
+  }
+
+
 #percentage-unit-btn, #em-unit-btn, #rem-unit-btn, #ch-unit-btn, #vh-unit-btn, #vw-unit-btn, #vmin-unit-btn, #vmax-unit-btn {
     background-color: #c5d7d7;
-    font-family: 'Press Start 2P', monospace, sans-serif;;
+    font-family: 'Press Start 2P', monospace, sans-serif;
     width: 70px;
     border-radius: 5px;
     box-shadow: 5px 5px black;
@@ -137,6 +188,12 @@ p.bold {
     margin-left: 190px;
     cursor: pointer;
 }
+
+@media (max-width: 600px) {
+    #percentage-unit-btn, #em-unit-btn, #rem-unit-btn, #ch-unit-btn, #vh-unit-btn, #vw-unit-btn, #vmin-unit-btn, #vmax-unit-btn{
+        margin-right: 190px;
+    }
+  }
     
 #hide-percentage-btn, #hide-em-btn, #hide-rem-btn, #hide-ch-btn, #hide-vh-btn, #hide-vw-btn, #hide-vmin-btn, #hide-vmax-btn {
     background-color: #c5d7d7;
@@ -149,7 +206,7 @@ p.bold {
     margin-right: 80px;
     cursor: pointer;
 }
-
+    
 #percentage-info {
     display: grid;
     grid-template-columns: 2fr auto;
