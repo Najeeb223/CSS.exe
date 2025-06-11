@@ -21,7 +21,6 @@ body {
     flex: 1; 
   }
   
-  /* Logo container */
   #jc-logo img {
     height: 40px; 
     width: auto;
@@ -60,8 +59,8 @@ body {
     animation-name: fadeInStartGame;
     animation-timing-function: ease-in;
     animation-duration: 2s;
-    gap: 50px;
-    margin-bottom: 400px;
+    gap: 30px;
+    margin-bottom: 200px;
 }
 @keyframes fadeInStartGame {
     0% {
@@ -79,8 +78,8 @@ body {
     opacity: 0;
     background-color: #c5d7d7;
     animation: fadeIn 3s ease forwards 2.5s, pulse-animation 3s ease-in-out 2.5s infinite;
-    padding: 20px;
-    font-size: 15px;
+    font-size: 12px;
+    padding: 15px;
     border-radius: 10px;
     cursor: pointer;
     box-shadow: 5px 5px black;
@@ -111,10 +110,12 @@ body {
     flex-direction: column;
     align-items: center;
     border: solid 5px black;
-    margin-bottom: 80px;
+    padding: 10px;
+    margin-bottom: 50px;
 }
 
 .legend h2 {
+    font-size: 1rem;
     text-align: center;
     width: 100%;
   }
@@ -124,7 +125,9 @@ p.bold {
 }
 
 .legend p {
-    padding-right: 30px;
+    padding-right: 10px;
+    font-size: 0.9rem;
+    text-align: center;
 }
 
 
@@ -143,6 +146,7 @@ p.bold {
     margin: 0 auto;
     max-width: 1000px;
     margin-bottom: 400px;
+    padding: 0 1rem;
 }
 
 @media (max-width: 768px) {
@@ -173,15 +177,25 @@ p.bold {
     display: grid;
     grid-template-columns: repeat(3, auto);
     justify-items: center;
+    font-size: 0.9rem;
+
 }
 
 @media (max-width: 600px) {
-    .unit-heading {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        justify-items: center;;
-    }
+  .unit-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
   }
+
+  .unit-heading * {
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+  }
+}
+
 
 
 #percentage-unit-btn, #em-unit-btn, #rem-unit-btn, #ch-unit-btn, #vh-unit-btn, #vw-unit-btn, #vmin-unit-btn, #vmax-unit-btn {
@@ -197,8 +211,8 @@ p.bold {
 }
 
 @media (max-width: 600px) {
-    #percentage-unit-btn, #em-unit-btn, #rem-unit-btn, #ch-unit-btn, #vh-unit-btn, #vw-unit-btn, #vmin-unit-btn, #vmax-unit-btn{
-        margin-right: 190px;
+    #percentage-unit-btn, #em-unit-btn, #rem-unit-btn, #ch-unit-btn, #vh-unit-btn, #vw-unit-btn, #vmin-unit-btn, #vmax-unit-btn {
+        margin-left: 250px;
     }
   }
     
@@ -213,7 +227,17 @@ p.bold {
     margin-right: 80px;
     cursor: pointer;
 }
-    
+@media (max-width: 600px) {
+#hide-percentage-btn, #hide-em-btn, #hide-rem-btn, #hide-ch-btn, #hide-vh-btn, #hide-vw-btn, #hide-vmin-btn, #hide-vmax-btn {
+    margin-left: 330px;
+    }
+}
+
+@media (max-width: 600px) {
+    .unit-text {
+        margin-right: 50px;
+    }
+}
 #percentage-info {
     display: grid;
     grid-template-columns: 2fr auto;
@@ -369,7 +393,9 @@ p.bold {
     flex-direction: column;
     align-items: center;
     border: solid 5px black;
-    margin-bottom: 150px;
+    font-size: 1rem;
+    margin-bottom: 80px;
+    padding: 10px;
 }
 
 #grid-introduction {
@@ -378,6 +404,7 @@ p.bold {
     flex-direction: column;
     font-family: 'IBM Plex Mono', monospace, sans-serif;;
     margin-bottom: 30px;
+    padding: 0 1rem;
 }
 
 #grid-one-btn {
@@ -387,7 +414,8 @@ p.bold {
     margin-bottom: 100px;
     font-family: 'Press Start 2P', monospace, sans-serif;;
     background-color: #c5d7d7;
-    font-size: 20px;
+    font-size: 14px;
+    padding: 10px;
     border-radius: 10px;
     cursor: pointer;
     box-shadow: 5px 5px black;
@@ -402,6 +430,14 @@ p.bold {
    
 }
 
+@media (max-width: 768px) {
+    .grid-one {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        gap: 30px;
+    }
+  }
 .card-heading {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -427,6 +463,14 @@ p.bold {
     margin-bottom: 100px;
 }
 
+@media (max-width: 600px) {
+    .switch-card {
+      width: 90vw;        
+      max-width: 320px;   
+      height: auto;       
+      margin-bottom: 40px;
+    }
+  }
 .switch-card h2, p {
     padding-left: 80px;
 }
@@ -448,6 +492,37 @@ p.bold {
     z-index: 10;
     animation: playerSelectorFlash 2s infinite;
 }
+
+@media (max-width: 600px) {
+    #player-selector-one {
+        position: absolute;
+        top: 0;
+        left: -200px;
+        width: 100%;
+        height: 100%;
+        box-shadow: 0 0 0 6px black; 
+        animation: playerSelectorFlash 2s infinite;
+        pointer-events: none; 
+        z-index: 55;       
+        transform: translateX(-27px); 
+    }
+  }
+
+  @media (max-width: 600px) {
+    #player-selector-two {
+        position: absolute;
+        top: 0;
+        left: -200px;
+        width: 100%;
+        height: 100%;
+        box-shadow: 0 0 0 6px black; 
+        animation: playerSelectorFlash 2s infinite;
+        pointer-events: none; 
+        z-index: 55;       
+        transform: translateX(-27px); 
+    }
+  }
+  
 
 #player-selector-two {
     border: none;
