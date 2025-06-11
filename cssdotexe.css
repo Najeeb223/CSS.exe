@@ -135,7 +135,7 @@ p.bold {
     gap: 90px;
     margin: 0 auto;
     max-width: 1000px;
-    margin-bottom: 800px;
+    margin-bottom: 400px;
 }
 
 @media (max-width: 768px) {
@@ -356,6 +356,23 @@ p.bold {
     width: 8vmax;
 }
 
+#grid-intro-heading {
+    font-family: 'Press Start 2P', monospace, sans-serif;;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 5px black;
+    margin-bottom: 150px;
+}
+
+#grid-introduction {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'IBM Plex Mono', monospace, sans-serif;;
+    margin-bottom: 30px;
+}
+
 #grid-one-btn {
     display: flex;
     justify-content: center;
@@ -485,6 +502,22 @@ p.bold {
     }
   }
   
+#grid-heading-two {
+    font-family: 'Press Start 2P', monospace, sans-serif;;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 5px black;
+    margin-bottom: 150px;   
+}  
+
+#grid-introduction-two {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'IBM Plex Mono', monospace, sans-serif;;
+    margin-bottom: 30px;
+}
 
 .grid-two {
     display: grid;
@@ -604,7 +637,23 @@ p.bold {
       transform: translateY(0);
     }
   }
+
+#flex-intro-heading {
+    font-family: 'Press Start 2P', monospace, sans-serif;;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 5px black;
+    margin-bottom: 150px;
+}  
  
+#flex-introduction {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'IBM Plex Mono', monospace, sans-serif;;
+    margin-bottom: 30px;
+}
 .flex-one {
     display: flex;
     flex-direction: row;
@@ -747,7 +796,22 @@ p.bold {
     }
   }
 
+#flex-headng-two {
+    font-family: 'Press Start 2P', monospace, sans-serif;;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 5px black;
+    margin-bottom: 150px;
+}
 
+#flex-introduction-two {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'IBM Plex Mono', monospace, sans-serif;;
+    margin-bottom: 30px;
+}
 
 .flex-two {
     display: flex;
