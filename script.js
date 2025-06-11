@@ -343,7 +343,6 @@ specialMoves();
 
 function playReadyButton() {
 
-  const flexTwo = document.querySelector('.flex-two');
   const roundOnePopup = document.getElementById("round-popup");
 
   const flexOneInfo = document.getElementById("flex1-info");
@@ -356,9 +355,9 @@ function playReadyButton() {
       
     }
 
-    flexTwo.scrollIntoView({ behavior: "smooth"});
     roundOnePopup.style.display = "block";
     flexOneInfo.style.display = "block";
+    flexOneInfo.scrollIntoView({ behavior: "smooth"});
   });
   
 }
@@ -380,6 +379,7 @@ function playFightButton() {
 
       fightPopup.style.display = "block";
       flexTwoInfo.style.display = "block";
+      flexTwoInfo.scrollIntoView({ behavior: "smooth"});
 
     });
 
