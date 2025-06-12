@@ -247,7 +247,6 @@ function hideVmaxUnit () {
 hideVmaxUnit();
 
 
-
 function selectPlayers() {
     const choosePlayersBtn = document.getElementById("grid-one-btn");
     const selectorOne = document.getElementById("player-selector-one");
