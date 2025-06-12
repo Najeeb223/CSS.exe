@@ -441,6 +441,7 @@ p.bold {
 .card-heading {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    
 }
 
 .groundbot-icon {
@@ -494,32 +495,18 @@ p.bold {
 }
 
 @media (max-width: 600px) {
-    #player-selector-one {
-        position: absolute;
-        top: 0;
-        left: -200px;
-        width: 100%;
-        height: 100%;
-        box-shadow: 0 0 0 6px black; 
-        animation: playerSelectorFlash 2s infinite;
-        pointer-events: none; 
-        z-index: 55;       
-        transform: translateX(-27px); 
-    }
-  }
-
-  @media (max-width: 600px) {
+    #player-selector-one,
     #player-selector-two {
-        position: absolute;
-        top: 0;
-        left: -200px;
-        width: 100%;
-        height: 100%;
-        box-shadow: 0 0 0 6px black; 
-        animation: playerSelectorFlash 2s infinite;
-        pointer-events: none; 
-        z-index: 55;       
-        transform: translateX(-27px); 
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateX(-27px); /* tweak as needed */
+      width: 100%;
+      height: 100%;
+      box-shadow: 0 0 0 6px black;
+      animation: playerSelectorFlash 2s infinite;
+      pointer-events: none;
+      z-index: 55;
     }
   }
   
@@ -745,6 +732,14 @@ p.bold {
     justify-content: space-around;
     margin-bottom: 50px;
 
+}
+
+@media (max-width: 600px) {
+    .flex-one {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
 }
 
 .flex1-heading {
