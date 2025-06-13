@@ -75,7 +75,7 @@ CSS.exe is proudly open-source and welcomes collaboration!
 
 ## 📌 Project Board
 
-Track bugs, enhancements, and ideas via the [Project Board](link-to-project-board).
+Track bugs, enhancements, and ideas via the [Project Board](https://github.com/users/Najeeb223/projects/2).
 
 ---
 
