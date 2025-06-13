@@ -28,6 +28,8 @@ body {
   
   @media (max-width: 460px) {
     .header-wrapper {
+      width: 100vw;
+      box-sizing: border-box;
       flex-direction: column;
       align-items: center;
     }
@@ -114,6 +116,18 @@ body {
     margin-bottom: 50px;
 }
 
+@media (max-width: 600px) {
+  .legend {
+   padding-right: 20%; 
+  }
+}
+
+@media (max-width: 600px) {
+  #legend-heading {
+    padding-left: 20%;
+  }
+}
+
 .legend h2 {
     font-size: 1rem;
     text-align: center;
@@ -151,7 +165,10 @@ p.bold {
 
 @media (max-width: 768px) {
     #css-units {
+        display: grid;
         grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+
     }
   }
 
@@ -398,6 +415,12 @@ p.bold {
     padding: 10px;
 }
 
+@media (max-width: 600px) {
+  #grid-intro-heading {
+    font-size: 0.6em;
+  }
+}
+
 #grid-introduction {
     display: flex;
     align-items: center;
@@ -405,6 +428,12 @@ p.bold {
     font-family: 'IBM Plex Mono', monospace, sans-serif;;
     margin-bottom: 30px;
     padding: 0 1rem;
+}
+
+@media (max-width: 600px) {
+  #grid-introduction {
+    padding-right: 22%;
+  }
 }
 
 #grid-one-btn {
