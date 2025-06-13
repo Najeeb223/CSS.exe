@@ -313,12 +313,31 @@ p.bold {
 }
 
 #first-ch {
-    width: 20ch;
+    width: 15ch;
 }
 
 #second-ch {
-    width: 40ch;
+    width: 30ch;
 }
+
+@media (max-width: 600px) {
+  #ch-text {
+    padding-right: 20%; 
+  }
+}
+
+@media (max-width: 600px) {
+  #first-ch {
+    padding-left: 35%; 
+  }
+}
+
+@media (max-width: 600px) {
+  #second-ch  {
+    margin-right: 20%; 
+  }
+}
+
 
 #vh-info {
     display: grid;
@@ -529,7 +548,7 @@ p.bold {
       position: absolute;
       top: 0;
       left: 0;
-      transform: translateX(-27px); /* tweak as needed */
+      transform: translateX(-27px); 
       width: 100%;
       height: 100%;
       box-shadow: 0 0 0 6px black;
@@ -654,7 +673,7 @@ p.bold {
 .animate-btn {
   width: 70px;
   height: 70px;
-  background: url('animation-button.png') no-repeat center;
+  background: url('./assets/icons/animation-button.png') no-repeat center;
   background-size: contain;
   border: none;
   cursor: pointer;

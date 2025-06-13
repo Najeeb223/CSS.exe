@@ -6,13 +6,13 @@
         <title>CSS.EXE</title>
         <link rel="stylesheet" href="cssdotexe.css"/>
         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Press+Start+2P&display=swap" rel="stylesheet" />
-
+        <link rel="icon" href="./assets/images/jclogo.png" type="image/x-icon">
     </head>
     <body>   
         <div class="header-wrapper">
         <h1 class="heading">CSS.EXE</h1>
         <div id="jc-logo">
-            <img src="jclogo.png" alt="jeeba coding logo"/>
+            <img src="./assets/images/jclogo.png" alt="jeeba coding logo"/>
         </div>
         </div> 
 
@@ -81,10 +81,10 @@
                     <p class="unit-text">ch</p><button id="ch-unit-btn">view</button></button><button id="hide-ch-btn">hide</button> 
             </div>
             <div id="ch-info" class="mystic-text" style="display: none;">
-                <p>ch is based on the width of the character "0" in the current font. 1ch = the width of one "0", 10ch = ten zeros wide. It’s great for sizing inputs and aligning type.</p>
+                <p id="ch-text">ch is based on the width of the character "0" in the current font. 1ch = the width of one "0", 10ch = ten zeros wide. It’s great for sizing inputs and aligning type.</p>
             <div id="ch-example">
-                <p id="first-ch">This text is 20ch wide.  The text wraps quickly</p>
-                <p id="second-ch">This text is 40ch wide.  The same text has more room</p>
+                <p id="first-ch">This text is 15ch wide.  The text wraps quickly</p>
+                <p id="second-ch">This text is 30ch wide.  The same text has more room</p>
             </div>
             </div>      
             </div>
@@ -121,8 +121,8 @@
             <div id="vmin-info" class="mystic-text" style="display: none;">
                 <p><code>vmin</code> is a relative unit that equals 1% of the smaller value between the viewport’s width and height, making it useful for responsive designs that adapt to limited screen dimensions, with the below examples showcasing a sword with widths of 5vmin and 10vmin respectively.</p>
             <div id="vmin-example">
-                            <img src="emperor-swing.png" id="sword1"/>
-                            <img src="sword2.png" id="sword2"/>
+                            <img src="./assets/icons/emperor-swing.png" id="sword1"/>
+                            <img src="./assets/icons/sword2.png" id="sword2"/>
             </div>
             </div>      
             </div>
@@ -134,8 +134,8 @@
                 <p><code>vmax</code> is a relative unit that equals 1% of the larger value between the viewport’s width and height, making it ideal for scaling elements on spacious screens, with the below examples showcasing a treasure chest with widths of 2vmax and 8vmax respectively.</p>
             <div id="vmax-example">
                          <p></p>
-                            <img src="treasure-chest1.png" id="chest1"/>
-                            <img src="treasure-chest2.png" id="chest2"/>
+                            <img src="./assets/icons/treasure-chest1.png" id="chest1"/>
+                            <img src="./assets/icons/treasure-chest2.png" id="chest2"/>
             </div>
             </div>      
             </div>            
@@ -153,7 +153,7 @@
         </div>               
             <section class="grid-one" id="chamber-grid">      
             <div id="player-one" class="switch-card"> 
-                <div class="card-heading"><h2>Player 1</h2><img src="groundbot.png" alt="player1" class="groundbot-icon"/>
+                <div class="card-heading"><h2>Player 1</h2><img src="./assets/icons/groundbot.png" alt="player1" class="groundbot-icon"/>
                     <div id="player-selector-one" style="display: none; position: absolute;"></div>
                 </div>   
                 <ul>
@@ -164,7 +164,7 @@
                   </ul>  
             </div>
              <div id="player-two" class="switch-card">
-                    <div class="card-heading"><h2>Player 2</h2><img src="knight.png" alt="player2" class="player-logo"/>
+                    <div class="card-heading"><h2>Player 2</h2><img src="./assets/icons/knight.png" alt="player2" class="player-logo"/>
                 </div>    
                 <ul>
                     <li>Ground unit</li>
@@ -174,7 +174,7 @@
                   </ul> 
             </div>
             <div id="player-three" class="switch-card">
-                <div class="card-heading"><h2>Player 3</h2><img src="dragon.png" alt="player3" class="player-logo"/>
+                <div class="card-heading"><h2>Player 3</h2><img src="./assets/icons/dragon.png" alt="player3" class="player-logo"/>
                     <div id="player-selector-two" style="display: none; position: absolute;"></div>
                 </div>    
                 <ul>
@@ -185,7 +185,7 @@
                   </ul>
             </div>           
             <div id="player-four" class="switch-card">
-                <div class="card-heading"><h2>Player 4</h2><img src="airbot.png" alt="player4" class="player-logo"/>
+                <div class="card-heading"><h2>Player 4</h2><img src="./assets/icons/airbot.png" alt="player4" class="player-logo"/>
                 </div>    
                 <ul>
                     <li>Air unit</li>
@@ -216,7 +216,7 @@
                 <button class="animate-btn" aria-label="Play special move"></button>
                 <div class="switch-block">
                     <h3>Groundbot's Orbital Laser</h3>   
-                        <img src="orbital-laser2.png" data-anim-id="orbital-laser" alt="laser-beam" class="animation-icons" />
+                        <img src="./assets/icons/orbital-laser2.png" data-anim-id="orbital-laser" alt="laser-beam" class="animation-icons" />
                      <div class="grid-info" class="mystic-text" style="display: none;">
                             <p><strong>grid-template-columns</strong> defines the number of columns and how wide each should be.</p>
                             <p>Use fractional units like <strong>fr</strong> to divide space proportionally.</p>
@@ -226,7 +226,7 @@
                 <button class="animate-btn" aria-label="Play special move"></button>
                 <div class="switch-block">
                        <h3>Knight's Emperor Swing</h3>
-                       <img src="emperor-swing.png" data-anim-id="sword-swing" alt="sword-swing" class="animation-icons" />
+                       <img src="./assets/icons/emperor-swing.png" data-anim-id="sword-swing" alt="sword-swing" class="animation-icons" />
                        <div class="grid-info" class="mystic-text" style="display: none;">
                         <p><strong>place-items</strong> is a shorthand for aligning grid items both vertically and horizontally.</p>
                         <p><strong>justify-items</strong> controls horizontal alignment of items in their grid cells.</p>
@@ -238,7 +238,7 @@
                 <button class="animate-btn" aria-label="Play special move"></button>
                 <div class="switch-block">
                     <h3>Dragon's Fireball</h3>
-                    <img src="fireball.png" data-anim-id="fireball-blast" alt="dragon-fireball" class="animation-icons" /> 
+                    <img src="./assets/icons/fireball.png" data-anim-id="fireball-blast" alt="dragon-fireball" class="animation-icons" /> 
                     <div class="grid-info" class="mystic-text" style="display: none;">
                         <p><strong>grid-area</strong> lets you name areas and place items by name instead of numbers.</p>
                         <p><strong>grid-template-areas</strong> defines layout using text-based labels for each section.</p>
@@ -250,7 +250,7 @@
                 <button class="animate-btn" aria-label="Play special move"></button>
                 <div class="switch-block">
                     <h3>Airbot's Blast Fist</h3>
-                    <img src="blast.png" data-anim-id="fist-blast" alt="airbot-cannon" class="animation-icons" /> 
+                    <img src="./assets/icons/blast.png" data-anim-id="fist-blast" alt="airbot-cannon" class="animation-icons" /> 
                     <div class="grid-info" class="mystic-text" style="display: none;">
                         <p><strong>auto-fill</strong> and <strong>auto-fit</strong> help create responsive grids by automatically filling space with columns or rows.</p>
                         <p><strong>justify-content</strong> and <strong>align-content</strong> control grid alignment within the container.</p>
@@ -272,43 +272,43 @@
             <div class="player-one">
             <div class="p2-container">    
                 <h2 class="flex1-heading">Player 1</h2>
-                <img src="groundbot.png" alt="player1" class="player-logo"/>
+                <img src="./assets/icons/groundbot.png" alt="player1" class="player-logo"/>
             </div>
             <div class="icon-one">    
-                <img src ="heart.png" alt="heart-icon" class="icons"/><p>HP: <span class="bold"> 900</span></p>
+                <img src ="./assets/icons/heart.png" alt="heart-icon" class="icons"/><p>HP: <span class="bold"> 900</span></p>
             </div>
             <div class="icon-two">    
-                <img src ="fire-flame.png" alt="flame-icon" class="icons"><p>DPS: <span class="bold"> 450</span></p>
+                <img src ="./assets/icons/fire-flame.png" alt="flame-icon" class="icons"><p>DPS: <span class="bold"> 450</span></p>
             </div>
             <div class="icon-three">    
-                <img src ="flash.png" alt="flash-icon" class="icons"><p>SPEED: <span class="bold"> 225</span></p>
+                <img src ="./assets/icons/flash.png" alt="flash-icon" class="icons"><p>SPEED: <span class="bold"> 225</span></p>
             </div> 
             <div class="icon-four">   
-                <img src ="battery-status-full.png" alt="battery-icon" class="icons"><p>ENERGY: <span class="bold"> 700</span></p>
+                <img src ="./assets/icons/battery-status-full.png" alt="battery-icon" class="icons"><p>ENERGY: <span class="bold"> 700</span></p>
             </div>
             <div class="icon-four">     
-                <img src ="ground.png" alt="ground-icon" class="icons"><p>TROOP: <span class="bold"> GROUND</span></p>
+                <img src ="./assets/icons/ground.png" alt="ground-icon" class="icons"><p>TROOP: <span class="bold"> GROUND</span></p>
             </div>    
             </div>
             <div class="player-two">
             <div class="p2-container">
                 <h2 class="flex1-heading">Player 4</h2>
-                <img src="airbot.png" alt="player2" class="player-logo"/>
+                <img src="./assets/icons/airbot.png" alt="player2" class="player-logo"/>
             </div>
               <div class="icon-one">    
-                <img src ="heart.png" alt="heart-icon" class="icons"/><p>HP: <span class="bold"> 800</span></p>
+                <img src ="./assets/icons/heart.png" alt="heart-icon" class="icons"/><p>HP: <span class="bold"> 800</span></p>
             </div>
             <div class="icon-two">    
-                <img src ="fire-flame.png" alt="flame-icon" class="icons"><p>DPS: <span class="bold"> 700</span></p>
+                <img src ="./assets/icons/fire-flame.png" alt="flame-icon" class="icons"><p>DPS: <span class="bold"> 700</span></p>
             </div>
             <div class="icon-three">    
-                <img src ="flash.png" alt="flash-icon" class="icons"><p>SPEED: <span class="bold"> 350</span></p>
+                <img src ="./assets/icons/flash.png" alt="flash-icon" class="icons"><p>SPEED: <span class="bold"> 350</span></p>
             </div> 
             <div class="icon-four">   
-                <img src ="battery-status-full.png" alt="battery-icon" class="icons"><p>ENERGY: <span class="bold"> 550</span></p>
+                <img src ="./assets/icons/battery-status-full.png" alt="battery-icon" class="icons"><p>ENERGY: <span class="bold"> 550</span></p>
             </div>
             <div class="icon-four">     
-                <img src ="wind.png" alt="wind-icon" class="icons"><p>TROOP: <span class="bold"> AIR</span></p>
+                <img src ="./assets/icons/wind.png" alt="wind-icon" class="icons"><p>TROOP: <span class="bold"> AIR</span></p>
             </div>    
             </div>
             </section>
@@ -337,11 +337,11 @@
             <section class="flex-two">
              <div class="metric1-container">
                 <h3 class="flex2-heading">Player 1</h3>
-                <img src="groundbot.png" alt="player1" class="player-logo-metric"/>
+                <img src="./assets/icons/groundbot.png" alt="player1" class="player-logo-metric"/>
             </div>
             <div class="p1-hp">
                 <div class="icon-label">
-                    <img src="heart.png" alt="heart" class="heart-icon"/>
+                    <img src="./assets/icons/heart.png" alt="heart" class="heart-icon"/>
                     <span class="metric-label">HITPOINTS (HP)</span>
                 </div>
                 <div class ="metric-bar">
@@ -350,7 +350,7 @@
             </div>
             <div class="p1-dps">
             <div class="icon-label">    
-                <img src ="fire-flame.png" alt="flame" class="flame-icon">
+                <img src ="./assets/icons/fire-flame.png" alt="flame" class="flame-icon">
                 <span class="metric-label">DAMAGE PER SECOND (DPS)</span>
             </div>    
                 <div class ="metric-bar">
@@ -359,7 +359,7 @@
             </div>
             <div class="p1-speed">
             <div class="icon-label">    
-                <img src ="flash.png" alt="flash" class="speed-icon">
+                <img src ="./assets/icons/flash.png" alt="flash" class="speed-icon">
                 <span class="metric-label">SPEED</span>
             </div>    
                 <div class ="metric-bar">
@@ -368,7 +368,7 @@
             </div>
             <div class="p1-energy">
             <div class="icon-label">    
-                <img src ="battery-status-full.png" alt="battery" class="energy-icon">
+                <img src ="./assets/icons/battery-status-full.png" alt="battery" class="energy-icon">
                 <span class="metric-label">ENERGY</span>
             </div>    
                 <div class ="metric-bar">
@@ -377,11 +377,11 @@
             </div>
             <div class="metric2-container">
                 <h3 class="flex2-heading">Player 4</h3>
-                <img src="airbot.png" alt="player-4" class="player-logo-metric"/>
+                <img src="./assets/icons/airbot.png" alt="player-4" class="player-logo-metric"/>
             </div>  
             <div class="p4-hp">
             <div class="icon-label">     
-                <img src ="heart.png" alt="heart" class="heart-icon"/>
+                <img src ="./assets/icons/heart.png" alt="heart" class="heart-icon"/>
                 <span class="metric-label">HITPOINTS (HP)</span>
             </div>    
                 <div class ="metric-bar">
@@ -390,7 +390,7 @@
             </div> 
             <div class="p4-dps">
             <div class="icon-label">    
-                <img src ="fire-flame.png " alt="flame" class="flame-icon"/>
+                <img src ="./assets/icons/fire-flame.png " alt="flame" class="flame-icon"/>
                 <span class="metric-label">DAMAGE PER SECOND (DPS)</span>
             </div>    
                 <div class ="metric-bar"> 
@@ -399,7 +399,7 @@
             </div>
             <div class="p4-speed">
             <div class="icon-label">    
-                <img src ="flash.png " alt="flash" class="speed-icon"/>
+                <img src ="./assets/icons/flash.png " alt="flash" class="speed-icon"/>
                 <span class="metric-label">SPEED</span>
             </div>    
                 <div class ="metric-bar">
@@ -408,7 +408,7 @@
             </div> 
             <div class="p4-energy">
             <div class="icon-label">    
-                <img src ="battery-status-full.png" alt="battery" class="energy-icon"/>
+                <img src ="./assets/icons/battery-status-full.png" alt="battery" class="energy-icon"/>
                 <span class="metric-label">ENERGY</span>
             </div>    
                 <div class ="metric-bar">
@@ -431,12 +431,12 @@
                 <p>Master these and you can create flexible, adaptive layouts without complex CSS.</p>
             </div>                       
              <footer id="contact-links">
-                <a href="https://github.com/Najeeb223" target="_blank"><img src="github.png" id="github-logo" alt="github logo" class="logo-links"/></a>
-                <a href="https://www.linkedin.com/in/najeeb-abdi-13b5a2284/" target="_blank"><img src="linkedin.png" href="" id="linkedin-logo" alt="linkedIn logo" class="logo-links"/></a>
-                <a href="https://x.com/jeebacoding" target="_blank" ><img src="x.png" id="x-logo" alt="x logo" class="logo-links"/></a>
+                <a href="https://github.com/Najeeb223" target="_blank"><img src="./assets/icons/github.png" id="github-logo" alt="github logo" class="logo-links"/></a>
+                <a href="https://www.linkedin.com/in/najeeb-abdi-13b5a2284/" target="_blank"><img src="./assets/icons/linkedin.png" href="" id="linkedin-logo" alt="linkedIn logo" class="logo-links"/></a>
+                <a href="https://x.com/jeebacoding" target="_blank" ><img src="./assets/icons/x.png" id="x-logo" alt="x logo" class="logo-links"/></a>
              </footer>         
-            <audio id="roundAudio" src="round1.mp3" preload="auto"></audio>
-            <audio id="fightAudio" src="fight.mp3" preload="auto"></audio>
+            <audio id="roundAudio" src="./assets/audio/round1.mp3" preload="auto"></audio>
+            <audio id="fightAudio" src="./assets/audio/fight.mp3" preload="auto"></audio>
      </body>
     <script src="script.js"></script> 
 </html>    
