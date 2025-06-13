@@ -612,12 +612,24 @@ p.bold {
     margin-bottom: 150px;   
 }  
 
+@media (max-width: 600px) {
+  #grid-heading-two {
+    font-size: 0.6em;
+  }
+}
+
 #grid-introduction-two {
     display: flex;
     align-items: center;
     flex-direction: column;
-    font-family: 'IBM Plex Mono', monospace, sans-serif;;
+    font-family: 'IBM Plex Mono', monospace, sans-serif;
     margin-bottom: 30px;
+}
+
+@media (max-width: 600px) {
+  #grid-introduction-two {
+    padding-right: 19%;
+  }
 }
 
 .grid-two {
@@ -747,6 +759,12 @@ p.bold {
     border: solid 5px black;
     margin-bottom: 150px;
 }  
+
+@media (max-width: 600px) {
+  #flex-intro-heading {
+    font-size: 0.6em;
+  }
+}
  
 #flex-introduction {
     display: flex;
@@ -755,6 +773,13 @@ p.bold {
     font-family: 'IBM Plex Mono', monospace, sans-serif;;
     margin-bottom: 30px;
 }
+
+@media (max-width: 600px) {
+  #flex-introduction {
+    padding-right: 19%;
+  }
+}
+
 .flex-one {
     display: flex;
     flex-direction: row;
@@ -913,12 +938,24 @@ p.bold {
     margin-bottom: 150px;
 }
 
+@media (max-width: 600px) {
+  #flex-headng-two {
+    font-size: 0.6em;
+  }
+}
+
 #flex-introduction-two {
     display: flex;
     align-items: center;
     flex-direction: column;
     font-family: 'IBM Plex Mono', monospace, sans-serif;;
     margin-bottom: 30px;
+}
+
+@media (max-width: 600px) {
+  #flex-introduction-two {
+    padding-right: 15%;
+  }
 }
 
 .flex-two {
