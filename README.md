@@ -7,9 +7,8 @@
 Built entirely with HTML, CSS, and JavaScript, CSS.exe is:
 
 * 🎨 A visual playground to explore CSS concepts
-* 🕹️ Inspired by retro games like Street Fighter and Final Fantasy
-* 🧠 A “learn-by-doing” alternative to passive tutorial watching
-* 🌍 Designed to empower beginners, self-learners, and the African dev community
+* 🕹️ Inspired by retro games like Street Fighter.
+* 🧠 Designed to empower beginner and self-learners that building is the best way to learn programming.
 
 
 ## 🚀 Live Demo
@@ -24,7 +23,6 @@ Built entirely with HTML, CSS, and JavaScript, CSS.exe is:
 * **Grid Mechanics:** Grid-based stat reveals and layout animations
 * **Metric Animations:** Bars power-up dynamically to reflect stat levels
 * **Retro Feel:** Pixel art, classic fonts, and old-school UI
-* **Mobile Responsive:** Optimized for devices up to 600px width
 
 ---
 
