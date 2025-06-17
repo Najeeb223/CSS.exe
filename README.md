@@ -42,24 +42,6 @@ cssdotexe/
 
 ---
 
-## 🛠️ How to Run Locally
-
-1. Clone the repo:
-
-   ```bash
-   git clone https://github.com/yourusername/cssdotexe.git
-   cd cssdotexe
-   ```
-
-2. Open `index.html` in your browser.
-
----
-
-## 🧪 Mobile Testing
-
-This project is optimized for devices at `max-width: 600px`. iPhone 12 Pro used as reference.
-
----
 
 ## 🙌 Contributing
 
@@ -67,19 +49,12 @@ CSS.exe is proudly open-source and welcomes collaboration!
 
 * Found a bug? Open an issue.
 * Want to improve a layout, animation, or add a feature? PRs are welcome.
-* Please read the [Contribution Guide](CONTRIBUTING.md) before submitting.
 
 ---
 
 ## 📌 Project Board
 
 Track bugs, enhancements, and ideas via the [Project Board](https://github.com/users/Najeeb223/projects/2).
-
----
-
-## ✨ Vision
-
-> To create *something heavy* — an unforgettable, impactful experience that sparks learning and pride in creativity across the African continent and beyond.
 
 ---
 
