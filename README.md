@@ -45,9 +45,8 @@ cssdotexe/
 
 ## 🙌 Contributing
 
-CSS.exe is proudly open-source and welcomes collaboration!
+CSS.exe is  open-source and welcomes collaboration
 
-* Found a bug? Open an issue.
 * Want to improve a layout, animation, or add a feature? PRs are welcome.
 
 ---
